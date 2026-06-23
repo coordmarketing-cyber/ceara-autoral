@@ -4,187 +4,792 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nordeste Autoral · Banco Curatorial · Desconexo Design</title>
-<!-- Auto-gerado via N8N em 23/06/2026 | 132 artesãos | 13 Credenciados | 11 Validados -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
-:root{--terra:#B5541A;--terra-esc:#8C3E10;--creme:#F2E8D5;--fundo:#AA4D18;--tinta:#1A0E06;--tinta2:#3D1F0A;--ocre:#D4A84B;--cred:#4CAF78;--vali:#E8C850;--serif:'Fraunces',Georgia,serif;--sans:'Syne',system-ui,sans-serif;--mono:'Roboto Mono',monospace;--nav-h:64px}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--sans);background:var(--fundo);color:var(--creme);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");background-size:200px;mix-blend-mode:multiply;opacity:.4}
-nav{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nav-h);background:rgba(140,62,16,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(242,232,213,.08);display:flex;align-items:center;padding:0 32px;gap:0}
-.nav-marca{display:flex;align-items:center;gap:16px;text-decoration:none;flex-shrink:0}
-.nav-icone{width:34px;height:34px;border:1.5px solid var(--ocre);position:relative;display:flex;align-items:center;justify-content:center}
-.nav-icone::before{content:'';position:absolute;width:10px;height:10px;background:var(--ocre);top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg)}
-.nav-nome{font-family:var(--serif);font-size:17px;font-weight:500;color:var(--creme)}
-.nav-sub{font-family:var(--mono);font-size:8.5px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(242,232,213,.4)}
-.nav-div{flex:1}
-.nav-pills{display:flex;align-items:center;gap:3px;overflow-x:auto;scrollbar-width:none;padding:0 20px}
-.nav-pills::-webkit-scrollbar{display:none}
-.npill{font-family:var(--mono);font-size:8.5px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:rgba(242,232,213,.45);background:none;border:1px solid rgba(242,232,213,.08);padding:5px 11px;cursor:pointer;transition:all .18s;white-space:nowrap}
-.npill:hover{color:var(--creme);border-color:rgba(242,232,213,.2)}
-.npill.on{color:var(--tinta);background:var(--ocre);border-color:var(--ocre)}
-.nav-busca{display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(242,232,213,.3);padding-bottom:4px;flex-shrink:0}
-.nav-busca:focus-within{border-color:var(--ocre)}
-.nav-busca-label{font-family:var(--sans);font-size:11px;color:rgba(242,232,213,.4);margin-right:10px}
-.nav-busca input{background:none;border:none;outline:none;font-family:var(--sans);font-size:13px;color:var(--creme);width:180px}
-.nav-busca input::placeholder{color:rgba(242,232,213,.3)}
-.nav-total{font-family:var(--mono);font-size:9px;letter-spacing:1px;color:rgba(242,232,213,.3);margin-left:16px;flex-shrink:0}
-.hero{margin-top:var(--nav-h);background:var(--terra-esc);padding:64px 56px 0;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.04;background-image:repeating-linear-gradient(45deg,var(--creme) 0,var(--creme) 1px,transparent 0,transparent 50%),repeating-linear-gradient(-45deg,var(--creme) 0,var(--creme) 1px,transparent 0,transparent 50%);background-size:28px 28px}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;padding-bottom:48px;border-bottom:1px solid rgba(242,232,213,.08)}
-.hero-esq{display:flex;flex-direction:column}
-.hero-dir{display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:4px}
-.hero-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--ocre);display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--ocre)}
-.hero-titulo{font-family:var(--sans);font-size:clamp(64px,7vw,108px);font-weight:800;line-height:.92;letter-spacing:-3px;text-transform:uppercase;color:var(--creme)}
-.hero-titulo em{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(48px,5.5vw,84px);color:rgba(242,232,213,.3);text-transform:none;display:block;margin-top:6px;letter-spacing:-1px}
-.hero-nota{border-left:2px solid var(--ocre);padding:16px 20px;background:rgba(196,144,58,.06)}
-.hero-nota-label{font-family:var(--mono);font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--ocre);margin-bottom:10px}
-.hero-nota-txt{font-size:12px;font-weight:300;line-height:1.8;color:rgba(242,232,213,.5)}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);position:relative;z-index:2}
-.hero-stat{padding:24px 0;border-right:1px solid rgba(242,232,213,.07)}
-.hero-stat:last-child{border-right:none}
-.hero-stat-num{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1;color:var(--creme);display:block;letter-spacing:-2px}
-.hero-stat-label{font-family:var(--mono);font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(242,232,213,.35);margin-top:4px;display:block}
-.pilares-secao{background:var(--terra-esc);padding:40px 56px;border-top:1px solid rgba(242,232,213,.06)}
-.pilares-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px}
-.pilares-label{font-family:var(--sans);font-size:12px;color:rgba(242,232,213,.4)}
-.pilares-reset{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,213,.25);background:none;border:none;cursor:pointer;transition:color .15s}
-.pilares-reset:hover{color:var(--ocre)}
-.pilares-lista{display:flex;flex-wrap:wrap;gap:0 28px;row-gap:8px}
-.pilar-btn{font-family:var(--sans);font-size:clamp(22px,3vw,38px);font-weight:700;text-transform:uppercase;letter-spacing:-1px;color:rgba(242,232,213,.3);background:none;border:none;border-bottom:2px solid transparent;padding:4px 0 6px;cursor:pointer;transition:color .15s,border-color .15s;line-height:1;min-height:44px}
-.pilar-btn:hover{color:rgba(242,232,213,.65);border-bottom-color:rgba(242,232,213,.25)}
-.pilar-btn.on{color:var(--creme);border-bottom-color:var(--creme)}
-.pilar-btn-n{font-family:var(--mono);font-size:10px;font-weight:400;letter-spacing:0;vertical-align:super;margin-left:4px;opacity:.5}
-.catalogo-header{padding:28px 56px 16px;display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid rgba(242,232,213,.05)}
-.catalogo-titulo{font-family:var(--mono);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(242,232,213,.3)}
-.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:rgba(242,232,213,.05)}
-.card{background:var(--terra-esc);cursor:pointer;display:flex;flex-direction:column;min-height:300px;position:relative;overflow:hidden;transition:background .15s;user-select:none;pointer-events:auto}
-.card:hover{background:var(--terra)}
-.card:hover .card-foto{transform:scale(1.04)}
-.card:hover .card-arrow{opacity:1;transform:translate(0,0)}
-.card *{pointer-events:none}
-.card-fio{height:2px;width:100%;flex-shrink:0}
-.card-visual{flex:1;display:flex;align-items:flex-end;padding:20px 20px 0;position:relative;min-height:160px;overflow:hidden}
-.card-foto{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .4s ease}
-.card-foto-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,8,0,.65) 0%,transparent 55%);z-index:1}
-.card-letra{font-family:var(--serif);font-size:110px;font-weight:300;font-style:italic;line-height:.85;color:rgba(242,232,213,.06);position:absolute;bottom:-10px;right:12px;letter-spacing:-4px}
-.card-pilar-label{font-family:var(--mono);font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(242,232,213,.35);position:relative;z-index:2;padding-top:6px}
-.card-corpo{padding:16px 20px 20px;border-top:1px solid rgba(242,232,213,.05)}
-.card-nome{font-family:var(--sans);font-size:18px;font-weight:600;line-height:1.2;color:var(--creme);margin-bottom:5px;letter-spacing:-.2px}
-.card-local{font-size:12px;color:rgba(242,232,213,.4);margin-bottom:14px}
-.card-rodape{display:flex;align-items:center;justify-content:space-between}
-.badge{font-family:var(--mono);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border:1px solid;font-weight:500}
-.b-cred{color:var(--cred);border-color:rgba(76,175,120,.3);background:rgba(76,175,120,.08)}
-.b-vali{color:var(--ocre);border-color:rgba(212,168,75,.25);background:rgba(212,168,75,.07)}
-.b-aval{color:rgba(242,232,213,.4);border-color:rgba(242,232,213,.15);background:rgba(242,232,213,.04)}
-.card-arrow{font-size:18px;color:var(--creme);opacity:0;transform:translate(-6px,4px);transition:all .15s}
-.vazio{grid-column:1/-1;padding:100px 40px;font-family:var(--serif);font-size:18px;font-weight:300;font-style:italic;color:rgba(242,232,213,.2);text-align:center}
-.overlay{position:fixed;inset:0;z-index:1000;background:rgba(8,5,2,.85);display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px)}
-.overlay.on{display:flex}
-.modal{background:var(--creme);color:var(--tinta);width:100%;max-width:620px;max-height:90vh;overflow-y:auto;position:relative;animation:mopen .22s ease both}
-@keyframes mopen{from{opacity:0;transform:scale(.96) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.modal-fio{height:4px;width:100%}
-.modal-fechar{position:sticky;top:0;display:flex;justify-content:flex-end;padding:14px 18px 0;background:var(--creme);z-index:2}
-.btn-fechar{width:30px;height:30px;border:1px solid rgba(26,14,6,.15);background:none;cursor:pointer;color:var(--tinta2);font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .15s}
-.modal-carrossel{position:relative;aspect-ratio:16/7;overflow:hidden;background:var(--terra-esc)}
-.carrossel-faixa{display:flex;height:100%;transition:transform .35s cubic-bezier(.4,0,.2,1)}
-.carrossel-slide{min-width:100%;height:100%;background-size:cover;background-position:center;flex-shrink:0}
-.carrossel-placeholder{min-width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative}
-.carrossel-placeholder::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(242,232,213,.1) 1px,transparent 1px);background-size:20px 20px}
-.modal-visual-letra{font-family:var(--serif);font-size:160px;font-weight:300;font-style:italic;color:rgba(242,232,213,.07);line-height:1;letter-spacing:-6px;position:relative;z-index:1}
-.carrossel-seta{position:absolute;top:50%;z-index:10;transform:translateY(-50%);width:40px;height:40px;background:rgba(26,14,6,.5);border:1px solid rgba(242,232,213,.15);color:var(--creme);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
-.carrossel-seta.oculta{opacity:0;pointer-events:none}
-.carrossel-prev{left:14px}.carrossel-next{right:14px}
-.carrossel-pontos{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:10}
-.carrossel-ponto{width:6px;height:6px;border-radius:50%;background:rgba(242,232,213,.3);border:none;cursor:pointer;padding:0;transition:background .2s,transform .2s}
-.carrossel-ponto.on{background:var(--creme);transform:scale(1.3)}
-.carrossel-counter{position:absolute;top:12px;right:14px;z-index:10;font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:rgba(242,232,213,.5);background:rgba(26,14,6,.4);padding:3px 8px}
-.modal-corpo{padding:32px 36px 40px}
-.modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(26,14,6,.08)}
-.modal-nome{font-family:var(--sans);font-size:30px;font-weight:700;line-height:1.1;color:var(--tinta);letter-spacing:-.5px}
-.modal-local{font-size:13px;color:rgba(26,14,6,.45);margin-top:4px}
-.modal-badges{display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0}
-.modal-pilar{font-family:var(--mono);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border:1px solid}
-.badge-m{font-family:var(--mono);font-size:7.5px;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border:1px solid}
-.bm-cred{color:#2B6B45;border-color:rgba(28,61,40,.25);background:rgba(28,61,40,.07)}
-.bm-vali{color:var(--terra);border-color:rgba(181,84,26,.2);background:rgba(181,84,26,.06)}
-.bm-aval{color:rgba(26,14,6,.4);border-color:rgba(26,14,6,.1);background:rgba(26,14,6,.03)}
-.modal-info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid rgba(26,14,6,.07);margin-bottom:24px}
-.modal-info-item{padding:14px 16px;border-right:1px solid rgba(26,14,6,.07)}
-.modal-info-item:last-child{border-right:none}
-.modal-info-label{font-family:var(--mono);font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:rgba(26,14,6,.35);margin-bottom:5px}
-.modal-info-val{font-family:var(--serif);font-size:14px;color:var(--tinta2)}
-.modal-conceito{border-left:2px solid var(--terra);padding:16px 20px;background:rgba(181,84,26,.05);margin-bottom:24px}
-.modal-conceito-label{font-family:var(--mono);font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--terra);margin-bottom:8px}
-.modal-conceito-txt{font-family:var(--serif);font-size:15px;font-weight:300;font-style:italic;line-height:1.75;color:var(--tinta2)}
-.modal-acoes{display:flex;gap:8px;flex-wrap:wrap}
-.btn-modal{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12px;font-weight:600;padding:10px 20px;text-decoration:none;cursor:pointer;border:none;transition:all .15s}
-.btn-modal-p{background:var(--terra);color:var(--creme)}
-@media(max-width:860px){
-  nav{padding:10px 16px;flex-wrap:wrap;height:auto;gap:8px}
-  .nav-div{display:none}
-  .nav-busca{order:10;width:100%}
-  .nav-busca input{width:100%}
-  .nav-total{display:none}
-  .hero{margin-top:0;padding:calc(var(--nav-h) + 32px) 20px 0}
-  .hero-inner{grid-template-columns:1fr;gap:32px}
-  .hero-titulo{font-size:clamp(52px,12vw,80px)}
-  .pilares-secao{padding:28px 20px}
-  .catalogo-header{padding:20px 20px 12px}
-  .grade{grid-template-columns:repeat(2,1fr)}
-  .card{min-height:220px;-webkit-tap-highlight-color:rgba(242,232,213,.1)}
-  .overlay{padding:12px;align-items:flex-end}
-  .modal{max-height:92vh;border-radius:6px 6px 0 0;max-width:100%}
-  .modal-carrossel{aspect-ratio:4/3}
-  .modal-corpo{padding:20px 20px 32px}
-  .modal-nome{font-size:22px}
-  .modal-top{flex-direction:column;gap:10px}
-  .modal-info{grid-template-columns:1fr 1fr}
+:root {
+  /* Terra queimada como cor dominante — inspirado Nordestesse */
+  --terra:     #B5541A;
+  --terra-esc: #8C3E10;
+  --terra-cl:  #C96A2E;
+  --terra-pl:  #D4845A;
+
+  /* Creme/papel para cards e contraste */
+  --creme:     #F2E8D5;
+  --creme2:    #E8D9BE;
+  --creme3:    #D4C4A0;
+
+  /* Fundo geral */
+  --fundo:     #AA4D18;   /* tom médio de terra */
+  --fundo2:    #9A4414;
+
+  /* Escuro para texto sobre fundo claro */
+  --tinta:     #1A0E06;
+  --tinta2:    #3D1F0A;
+
+  /* Verde mata como acento complementar */
+  --mata:      #1C3D28;
+  --mata2:     #2D5C3C;
+
+  /* Ocre para destaques */
+  --ocre:      #D4A84B;
+  --ocre2:     #B8921E;
+
+  /* Status — sobre fundo escuro */
+  --cred:      #4CAF78;
+  --vali:      #E8C850;
+  --aval:      rgba(242,232,213,.45);
+
+  --serif:  'Fraunces', Georgia, serif;
+  --sans:   'Syne', system-ui, sans-serif;
+  --mono:   'Roboto Mono', monospace;
+
+  --nav-h:  58px;
+  --maxw:   1380px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--fundo);
+  color: var(--creme);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Grão sutil — sem interferir em cliques */
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+  background-size: 200px;
+  mix-blend-mode: multiply;
+  opacity: .4;
+}
+
+/* ═══ NAV ═══════════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+  height: var(--nav-h);
+  background: var(--terra-esc);
+  display: flex; align-items: center;
+  padding: 0 32px;
+  border-bottom: 1px solid rgba(242,232,213,.1);
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 14px;
+  text-decoration: none; flex-shrink: 0;
+}
+/* Símbolo DNX: três traços horizontais em ritmo — referência ao ritmo do forró */
+.nav-logo-mark {
+  display: flex; flex-direction: column; gap: 4px; flex-shrink: 0;
+}
+.nav-logo-mark span {
+  display: block; height: 1.5px; background: var(--ocre);
+  transition: width .2s;
+}
+.nav-logo-mark span:nth-child(1) { width: 22px; }
+.nav-logo-mark span:nth-child(2) { width: 14px; }
+.nav-logo-mark span:nth-child(3) { width: 18px; }
+
+.nav-logo-txt {
+  display: flex; flex-direction: column; gap: 1px;
+}
+.nav-logo-nome {
+  font-family: var(--sans);
+  font-size: 14px; font-weight: 700; letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--creme);
+  line-height: 1;
+}
+.nav-logo-sub {
+  font-family: var(--mono);
+  font-size: 7.5px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(242,232,213,.4);
+}
+
+/* Linha separadora vertical */
+.nav-sep { flex: 1; }
+
+/* Busca — estilo Nordestesse: underline simples */
+.nav-busca-wrap {
+  display: flex; align-items: center; gap: 0;
+  border-bottom: 1px solid rgba(242,232,213,.3);
+  padding-bottom: 4px;
+  margin-right: 24px;
+  transition: border-color .2s;
+}
+.nav-busca-wrap:focus-within { border-color: var(--ocre); }
+.nav-busca-label {
+  font-family: var(--sans);
+  font-size: 11px; font-weight: 400;
+  color: rgba(242,232,213,.4);
+  margin-right: 10px; letter-spacing: .5px;
+}
+.nav-busca-wrap input {
+  background: none; border: none; outline: none;
+  font-family: var(--sans); font-size: 13px; font-weight: 400;
+  color: var(--creme); width: 180px;
+}
+.nav-busca-wrap input::placeholder { color: transparent; }
+
+.nav-total {
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(242,232,213,.3);
+  white-space: nowrap;
+}
+
+/* ═══ HERO ═══════════════════════════════════════ */
+.hero {
+  margin-top: var(--nav-h);
+  padding: 80px 48px 0;
+  max-width: var(--maxw);
+  margin-left: auto; margin-right: auto;
+  position: relative;
+}
+
+/* Linha horizontal decorativa — referência às listragens nordestinas */
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 48px; right: 48px; top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(242,232,213,.15) 0%, rgba(242,232,213,.35) 50%, rgba(242,232,213,.15) 100%);
+}
+
+.hero-topo {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+  color: rgba(242,232,213,.5);
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before {
+  content: ''; width: 28px; height: 1px;
+  background: rgba(242,232,213,.3);
+}
+
+.hero-nota-topo {
+  max-width: 360px;
+  font-family: var(--sans);
+  font-size: 12px; font-weight: 400; line-height: 1.75;
+  color: rgba(242,232,213,.45);
+  text-align: right;
+}
+
+/* Título enorme — como Nordestesse */
+.hero-titulo {
+  font-family: var(--sans);
+  font-size: clamp(72px, 10vw, 152px);
+  font-weight: 800;
+  line-height: .9;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: var(--creme);
+  display: flex; align-items: baseline; gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.hero-titulo-em {
+  font-family: var(--serif);
+  font-weight: 300; font-style: italic;
+  font-size: clamp(56px, 7.5vw, 112px);
+  color: rgba(242,232,213,.35);
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+/* Nota curatorial — faixa larga como o Nordestesse usa texto descritivo */
+.hero-nota {
+  border-top: 1px solid rgba(242,232,213,.15);
+  border-bottom: 1px solid rgba(242,232,213,.15);
+  padding: 24px 0;
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 0;
+}
+.hero-nota-bloco { }
+.hero-nota-label {
+  font-family: var(--mono);
+  font-size: 8px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: rgba(242,232,213,.35);
+  margin-bottom: 8px;
+}
+.hero-nota-txt {
+  font-size: 13px; font-weight: 400; line-height: 1.7;
+  color: rgba(242,232,213,.6);
+}
+
+/* ═══ PILARES — estilo Nordestesse: grandes, underline ════ */
+.pilares-secao {
+  background: var(--terra-esc);
+  padding: 48px;
+  border-top: 1px solid rgba(242,232,213,.08);
+}
+.pilares-header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 24px;
+}
+.pilares-label {
+  font-family: var(--sans);
+  font-size: 12px; font-weight: 400;
+  color: rgba(242,232,213,.4);
+  letter-spacing: .5px;
+}
+.pilares-reset {
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(242,232,213,.25);
+  background: none; border: none; cursor: pointer;
+  transition: color .15s;
+}
+.pilares-reset:hover { color: var(--ocre); }
+
+.pilares-lista {
+  display: flex; flex-wrap: wrap;
+  gap: 0 32px;
+  row-gap: 12px;
+}
+
+.pilar-btn {
+  font-family: var(--sans);
+  font-size: clamp(26px, 3.5vw, 44px);
+  font-weight: 700; text-transform: uppercase;
+  letter-spacing: -1px;
+  color: rgba(242,232,213,.35);
+  background: none; border: none;
+  border-bottom: 2px solid transparent;
+  padding: 4px 0 6px;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+  line-height: 1;
+}
+.pilar-btn:hover {
+  color: rgba(242,232,213,.7);
+  border-bottom-color: rgba(242,232,213,.3);
+}
+.pilar-btn.on {
+  color: var(--creme);
+  border-bottom-color: var(--creme);
+}
+.pilar-btn-n {
+  font-family: var(--mono);
+  font-size: 10px; font-weight: 400;
+  letter-spacing: 0; vertical-align: super;
+  margin-left: 4px;
+  opacity: .5;
+}
+
+/* ═══ GRADE ═══════════════════════════════════════ */
+.catalogo-header {
+  padding: 32px 48px 20px;
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-top: 1px solid rgba(242,232,213,.06);
+}
+.catalogo-titulo {
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: rgba(242,232,213,.3);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  background: rgba(242,232,213,.06); /* gap como linha */
+  margin: 0;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--terra-esc);
+  cursor: pointer;
+  transition: background .15s;
+  display: flex; flex-direction: column;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: auto;
+}
+/* Filhos não interceptam clique — o card inteiro é a área clicável */
+.card * { pointer-events: none; }
+@keyframes up {
+  from { opacity:0; transform:translateY(12px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.card:hover { background: var(--terra); }
+.card:hover .card-arrow { opacity: 1; transform: translate(0,0); }
+
+/* Número de índice — editorial */
+.card-index {
+  position: absolute; top: 16px; right: 18px;
+  font-family: var(--mono);
+  font-size: 10px; color: rgba(242,232,213,.2);
+  letter-spacing: 1px;
+}
+
+/* Cor do pilar como faixa lateral esquerda */
+.card-fio {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 3px;
+}
+
+/* Visual da inicial — tipográfico, grande */
+.card-visual {
+  flex: 1;
+  display: flex; align-items: flex-end; padding: 20px 20px 0 20px;
+  position: relative;
+  min-height: 160px;
+  overflow: hidden;
+}
+/* Foto de capa no card */
+.card-foto {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transition: transform .4s ease;
+  pointer-events: none;
+}
+.card:hover .card-foto { transform: scale(1.04); }
+/* Gradiente sobre a foto para legibilidade do pilar label */
+.card-foto-gradiente {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(26,8,0,.7) 0%, transparent 55%);
+  z-index: 1;
+}
+.card-letra {
+  font-family: var(--serif);
+  font-size: 110px; font-weight: 300; font-style: italic;
+  line-height: .85;
+  color: rgba(242,232,213,.06);
+  user-select: none;
+  position: absolute; bottom: -10px; right: 12px;
+  letter-spacing: -4px;
+}
+.card-pilar-label {
+  font-family: var(--mono);
+  font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(242,232,213,.3);
+  position: relative; z-index: 2;
+  border-top: 1px solid;
+  border-color: inherit;
+  padding-top: 6px;
+}
+/* Quando tem foto, o label fica sobre o gradiente */
+.tem-foto .card-pilar-label {
+  color: rgba(242,232,213,.7);
+  border-color: rgba(242,232,213,.3);
+}
+
+/* ─── CARROSSEL NO MODAL ─────────────────────────── */
+.modal-carrossel {
+  position: relative;
+  aspect-ratio: 16/7;
+  overflow: hidden;
+  background: var(--terra-esc);
+}
+/* Faixa deslizante com as fotos lado a lado */
+.carrossel-faixa {
+  display: flex;
+  height: 100%;
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+}
+.carrossel-slide {
+  min-width: 100%; height: 100%;
+  background-size: cover; background-position: center;
+  position: relative;
+  flex-shrink: 0;
+}
+/* Placeholder quando não tem foto */
+.carrossel-placeholder {
+  min-width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.carrossel-placeholder::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(242,232,213,.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.modal-visual-letra {
+  font-family: var(--serif);
+  font-size: 200px; font-weight: 300; font-style: italic;
+  color: rgba(242,232,213,.07);
+  line-height: 1; user-select: none;
+  letter-spacing: -8px;
+  position: relative; z-index: 1;
+}
+
+/* Setas do carrossel */
+.carrossel-seta {
+  position: absolute; top: 50%; z-index: 10;
+  transform: translateY(-50%);
+  width: 40px; height: 40px;
+  background: rgba(26,14,6,.55);
+  border: 1px solid rgba(242,232,213,.15);
+  color: var(--creme);
+  font-size: 18px; font-family: var(--sans);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .15s, opacity .15s;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.carrossel-seta:hover { background: rgba(26,14,6,.85); }
+.carrossel-seta.oculta { opacity: 0; pointer-events: none; }
+.carrossel-prev { left: 14px; }
+.carrossel-next { right: 14px; }
+
+/* Indicadores de ponto */
+.carrossel-pontos {
+  position: absolute; bottom: 12px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; gap: 6px; z-index: 10;
+}
+.carrossel-ponto {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(242,232,213,.3);
+  border: none; cursor: pointer; padding: 0;
+  transition: background .2s, transform .2s;
+}
+.carrossel-ponto.on {
+  background: var(--creme);
+  transform: scale(1.3);
+}
+
+/* Contador de fotos */
+.carrossel-counter {
+  position: absolute; top: 12px; right: 14px; z-index: 10;
+  font-family: var(--mono);
+  font-size: 9px; letter-spacing: 1.5px;
+  color: rgba(242,232,213,.5);
+  background: rgba(26,14,6,.4);
+  padding: 3px 8px;
+  backdrop-filter: blur(4px);
+}
+
+/* Corpo */
+.card-corpo {
+  padding: 16px 20px 20px;
+  border-top: 1px solid rgba(242,232,213,.07);
+}
+.card-nome {
+  font-family: var(--sans);
+  font-size: 18px; font-weight: 600; line-height: 1.2;
+  color: var(--creme);
+  margin-bottom: 5px;
+  letter-spacing: -.2px;
+}
+.card-local {
+  font-size: 12px; font-weight: 400;
+  color: rgba(242,232,213,.4);
+  margin-bottom: 14px;
+  letter-spacing: .3px;
+}
+
+.card-rodape {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.badge {
+  font-family: var(--mono);
+  font-size: 7.5px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid;
+  font-weight: 500;
+}
+.b-cred { color: var(--cred); border-color: rgba(76,175,120,.3); background: rgba(76,175,120,.08); }
+.b-vali { color: var(--ocre); border-color: rgba(212,168,75,.25); background: rgba(212,168,75,.07); }
+.b-aval { color: rgba(242,232,213,.4); border-color: rgba(242,232,213,.12); background: transparent; }
+.b-naoa { color: #C46060; border-color: rgba(196,96,96,.25); background: rgba(196,96,96,.07); }
+
+.card-arrow {
+  font-size: 18px; color: var(--creme);
+  opacity: 0;
+  transform: translate(-6px, 4px);
+  transition: all .15s;
+}
+
+/* Vazio */
+.vazio {
+  grid-column: 1/-1;
+  padding: 120px 48px;
+  font-family: var(--serif);
+  font-size: 18px; font-weight: 300; font-style: italic;
+  color: rgba(242,232,213,.2);
+  text-align: center;
+}
+
+/* ═══ MODAL ═══════════════════════════════════════ */
+.overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(26,14,6,.88);
+  display: none; align-items: center; justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.overlay.on { display: flex; }
+
+.modal {
+  background: var(--creme);
+  color: var(--tinta);
+  width: 100%; max-width: 640px;
+  max-height: 90vh; overflow-y: auto;
+  position: relative;
+  animation: mopen .2s ease both;
+}
+@keyframes mopen {
+  from { opacity:0; transform: scale(.96) translateY(14px); }
+  to   { opacity:1; transform: scale(1)   translateY(0);    }
+}
+
+/* Fio de cor no topo */
+.modal-fio { height: 4px; width: 100%; }
+
+.modal-fechar {
+  position: sticky; top: 0;
+  display: flex; justify-content: flex-end;
+  padding: 14px 20px 0;
+  background: var(--creme); z-index: 2;
+}
+.btn-fechar {
+  width: 30px; height: 30px; border: none;
+  background: none; cursor: pointer;
+  color: var(--tinta2); font-size: 18px; font-family: var(--sans);
+  display: flex; align-items: center; justify-content: center;
+  transition: color .15s;
+}
+.btn-fechar:hover { color: var(--terra); }
+
+/* Split visual: fundo terra com inicial grande */
+.modal-visual {
+  aspect-ratio: 16/7;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.modal-visual-letra {
+  font-family: var(--serif);
+  font-size: 200px; font-weight: 300; font-style: italic;
+  color: rgba(242,232,213,.12);
+  line-height: 1; user-select: none;
+  letter-spacing: -8px;
+  position: relative; z-index: 1;
+}
+/* Grade de pontos no fundo do modal visual — referência bordado */
+.modal-visual::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(242,232,213,.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.modal-corpo { padding: 36px 40px 44px; }
+
+.modal-top {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(26,14,6,.08);
+}
+.modal-nome {
+  font-family: var(--sans);
+  font-size: 30px; font-weight: 700; line-height: 1.1;
+  color: var(--tinta);
+  letter-spacing: -.5px;
+}
+.modal-local {
+  font-size: 13px; font-weight: 400;
+  color: rgba(26,14,6,.45);
+  margin-top: 4px;
+}
+.modal-badges { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; flex-shrink: 0; }
+
+/* Badge de pilar no modal — sobre fundo claro */
+.modal-pilar {
+  font-family: var(--mono);
+  font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 4px 10px; border: 1px solid;
+}
+/* Status no modal — adaptado ao fundo claro */
+.badge-m { font-family: var(--mono); font-size: 7.5px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px; border: 1px solid; }
+.bm-cred { color: var(--mata); border-color: rgba(28,61,40,.25); background: rgba(28,61,40,.07); }
+.bm-vali { color: var(--terra); border-color: rgba(181,84,26,.2); background: rgba(181,84,26,.06); }
+.bm-aval { color: rgba(26,14,6,.4); border-color: rgba(26,14,6,.12); background: transparent; }
+.bm-naoa { color: #8B2020; border-color: rgba(139,32,32,.2); background: rgba(139,32,32,.05); }
+
+.modal-nota {
+  border-left: 3px solid var(--terra);
+  padding: 16px 18px;
+  background: rgba(181,84,26,.06);
+  margin-bottom: 28px;
+}
+.modal-nota-label {
+  font-family: var(--mono);
+  font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--terra); margin-bottom: 7px;
+}
+.modal-nota-txt {
+  font-family: var(--serif);
+  font-size: 15px; font-weight: 300; font-style: italic;
+  line-height: 1.75; color: var(--tinta2);
+}
+
+.modal-acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn-modal {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--sans);
+  font-size: 12px; font-weight: 600; letter-spacing: .3px;
+  padding: 10px 20px; text-decoration: none; cursor: pointer; border: none;
+  transition: all .15s;
+}
+.btn-modal-p { background: var(--terra); color: var(--creme); }
+.btn-modal-p:hover { background: var(--terra-esc); }
+.btn-modal-s { background: transparent; color: var(--tinta2); border: 1px solid rgba(26,14,6,.2); }
+.btn-modal-s:hover { border-color: rgba(26,14,6,.4); }
+
+/* ═══ MOBILE ═══════════════════════════════════════ */
+@media (max-width: 860px) {
+  /* NAV */
+  nav {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 8px;
+  }
+  .nav-sep { display: none; }
+  .nav-logo-nome { font-size: 13px; }
+  .nav-busca-wrap {
+    order: 10; width: 100%;
+    margin-right: 0;
+  }
+  .nav-busca-wrap input { width: 100%; }
+  .nav-busca-label { display: block; }
+  .nav-total { display: none; }
+
+  /* HERO */
+  .hero { margin-top: 0; padding: calc(var(--nav-h) + 32px) 20px 0; }
+  .hero-titulo { font-size: clamp(44px, 11vw, 80px); gap: 8px; flex-direction: column; }
+  .hero-titulo-em { font-size: clamp(36px, 9vw, 64px); }
+  .hero-nota { grid-template-columns: 1fr; gap: 16px; }
+  .hero::before { left: 20px; right: 20px; }
+  .hero-eyebrow { margin-bottom: 16px; }
+  .hero-topo { flex-direction: column; gap: 12px; }
+  .hero-nota-topo { text-align: left; max-width: 100%; }
+
+  /* PILARES */
+  .pilares-secao { padding: 24px 20px; }
+  .pilar-btn { font-size: clamp(20px, 5.5vw, 32px); }
+  .pilares-lista { gap: 0 16px; row-gap: 8px; }
+
+  /* GRADE */
+  .catalogo-header { padding: 20px 20px 12px; }
+  .grade { grid-template-columns: repeat(2, 1fr); }
+  .card { min-height: 220px; }
+  .card-nome { font-size: 15px; }
+  .card-visual { min-height: 120px; }
+
+  /* MODAL */
+  .overlay { padding: 12px; align-items: flex-end; }
+  .modal {
+    max-height: 92vh;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal-carrossel { aspect-ratio: 4/3; }
+  .modal-corpo { padding: 20px 20px 32px; }
+  .modal-nome { font-size: 22px; }
+  .modal-top { flex-direction: column; gap: 10px; }
+  .modal-badges { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .modal-info { grid-template-columns: 1fr 1fr; }
+  .modal-info-item { border-right: none; border-bottom: 1px solid rgba(26,14,6,.07); }
+  .modal-info-item:last-child { border-bottom: none; grid-column: 1/-1; }
+  .modal-conceito-txt { font-size: 14px; }
+  .btn-modal { font-size: 13px; padding: 10px 16px; }
+
+  /* Touch targets */
+  .pilar-btn { padding: 6px 0 8px; min-height: 44px; }
+  .card { cursor: pointer; -webkit-tap-highlight-color: rgba(242,232,213,.1); }
 }
 </style>
 </head>
 <body>
+
+<!-- NAV -->
 <nav>
-  <a href="#" class="nav-marca">
-    <div class="nav-icone"></div>
-    <div style="display:flex;flex-direction:column;gap:1px">
-      <span class="nav-nome">Nordeste Autoral</span>
-      <span class="nav-sub">Desconexo Design · Banco Curatorial</span>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-logo-txt">
+      <span class="nav-logo-nome">Nordeste Autoral</span>
+      <span class="nav-logo-sub">Nordeste Autoral · Banco Curatorial</span>
     </div>
   </a>
-  <div class="nav-div"></div>
-  <div class="nav-pills" id="navPills">
-    <button class="npill on" data-pilar="TODOS">Todos</button>
-  </div>
-  <div class="nav-busca">
+
+  <div class="nav-sep"></div>
+
+  <div class="nav-busca-wrap">
     <span class="nav-busca-label">buscar</span>
     <input type="text" id="busca" placeholder="nome, local ou pilar...">
   </div>
+
   <span class="nav-total" id="navTotal"></span>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-esq">
-      <div class="hero-eyebrow">Coleção Viva · 2025–2026</div>
-      <h1 class="hero-titulo">Banco<em>de artesãos</em></h1>
+  <div class="hero-topo">
+    <div class="hero-eyebrow">Coleção Viva · 2025–2026</div>
+    <p class="hero-nota-topo">Mapeamento curatorial de produtores culturais do Nordeste. Selecionados por critérios de autoria, escala e pertencimento.</p>
+  </div>
+
+  <div class="hero-titulo">
+    Banco
+    <span class="hero-titulo-em">de artesãos</span>
+  </div>
+
+  <div class="hero-nota">
+    <div class="hero-nota-bloco">
+      <div class="hero-nota-label">Sobre o projeto</div>
+      <p class="hero-nota-txt">O Nordeste Autoral nasce para revelar a potência criativa, cultural e estética do nosso território através do mapeamento de artesãos, técnicas, matérias-primas e saberes que carregam identidade verdadeira. Mais do que catalogar produções artesanais, nosso propósito é transformar cultura em valor, conectando tradição e contemporaneidade para criar experiências, produtos e espaços com alma, origem e significado. Acreditamos que a autenticidade será o maior ativo do futuro. Por isso, queremos posicionar o Nordeste como o lugar mais autêntico do Brasil — um território onde design, arquitetura, arte e hospitalidade nascem da história, da manualidade e da inteligência criativa do nosso povo. O Nordeste Autoral existe para transformar patrimônio cultural em desejo, reconhecimento e legado.</p>
     </div>
-    <div class="hero-dir">
-      <div class="hero-nota">
-        <div class="hero-nota-label">◈ Sobre o projeto</div>
-        <p class="hero-nota-txt">O Nordeste Autoral nasce para revelar a potência criativa, cultural e estética do nosso território através do mapeamento de artesãos, técnicas, matérias-primas e saberes que carregam identidade verdadeira. Mais do que catalogar produções artesanais, nosso propósito é transformar cultura em valor, conectando tradição e contemporaneidade para criar experiências, produtos e espaços com alma, origem e significado.</p>
+    <div class="hero-nota-bloco">
+      <div class="hero-nota-label">Como funciona</div>
+      <p class="hero-nota-txt">A relação comercial é sempre direta entre cliente e artesão — não há revenda ou intermediação pela Desconexo Design.</p>
+    </div>
+    <div class="hero-nota-bloco" style="display:flex;gap:40px;align-items:flex-start;">
+      <div>
+        <div class="hero-nota-label">Artesãos</div>
+        <p class="hero-nota-txt" style="font-size:40px;font-weight:800;font-family:var(--sans);line-height:1;color:var(--creme)" id="stTotal">—</p>
+      </div>
+      <div>
+        <div class="hero-nota-label">Credenciados</div>
+        <p class="hero-nota-txt" style="font-size:40px;font-weight:800;font-family:var(--sans);line-height:1;color:var(--creme)" id="stCred">—</p>
+      </div>
+      <div>
+        <div class="hero-nota-label">Pilares</div>
+        <p class="hero-nota-txt" style="font-size:40px;font-weight:800;font-family:var(--sans);line-height:1;color:var(--creme)" id="stPil">—</p>
       </div>
     </div>
   </div>
-  <div class="hero-stats">
-    <div class="hero-stat"><span class="hero-stat-num">132</span><span class="hero-stat-label">Artesãos</span></div>
-    <div class="hero-stat"><span class="hero-stat-num">13</span><span class="hero-stat-label">Credenciados</span></div>
-    <div class="hero-stat"><span class="hero-stat-num">16</span><span class="hero-stat-label">Pilares</span></div>
-  </div>
 </section>
 
+<!-- PILARES — estilo Nordestesse -->
 <section class="pilares-secao">
   <div class="pilares-header">
     <span class="pilares-label">descubra por pilar</span>
@@ -193,15 +798,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nav-h);backgrou
   <div class="pilares-lista" id="pilaresLista"></div>
 </section>
 
+<!-- CATÁLOGO -->
 <div class="catalogo-header">
   <span class="catalogo-titulo" id="catLabel">todos os artesãos</span>
 </div>
 <div class="grade" id="grade"></div>
 
+<!-- MODAL -->
 <div class="overlay" id="overlay">
   <div class="modal">
     <div class="modal-fio" id="mFio"></div>
-    <div class="modal-fechar"><button class="btn-fechar" id="btnFechar">✕</button></div>
+    <div class="modal-fechar">
+      <button class="btn-fechar" id="btnFechar">✕</button>
+    </div>
     <div class="modal-carrossel" id="mCarrossel">
       <div class="carrossel-faixa" id="mFaixa"></div>
       <button class="carrossel-seta carrossel-prev oculta" id="cPrev">‹</button>
@@ -211,242 +820,459 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nav-h);backgrou
     </div>
     <div class="modal-corpo">
       <div class="modal-top">
-        <div><div class="modal-nome" id="mNome"></div><div class="modal-local" id="mLocal"></div></div>
-        <div class="modal-badges"><span class="badge-m" id="mStatus"></span><span class="modal-pilar" id="mPilar"></span></div>
+        <div>
+          <div class="modal-nome" id="mNome"></div>
+          <div class="modal-local" id="mLocal"></div>
+        </div>
+        <div class="modal-badges">
+          <span class="badge-m" id="mStatus"></span>
+          <span class="modal-pilar" id="mPilar"></span>
+        </div>
       </div>
-      <div class="modal-info" id="mInfo"></div>
-      <div class="modal-conceito"><div class="modal-conceito-label">Indicação curatorial</div><p class="modal-conceito-txt" id="mConceito"></p></div>
+      <div class="modal-nota">
+        <div class="modal-nota-label">◈ Indicação curatorial</div>
+        <p class="modal-nota-txt" id="mConceito"></p>
+      </div>
       <div class="modal-acoes" id="mAcoes"></div>
     </div>
   </div>
 </div>
 
 <script>
+/* ══ DADOS ══════════════════════════════════════════════ */
 const A = [
-  {id:"18335188521",n:"Tulio Paracampos",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/p/DPwTOktDvk6/",c:"Artista plástico, ceramista e designer cearense formado pelo Instituto Dragão do Mar de Arte e Cultura (2003). Atua nas artes visuais desde 1997 e transita entre cerâmica, gravura e escultura com linguagem concretista e modular. Já expôs em cinco edições da Casa Cor Ceará e em mostras internacionais de gravura. Referência no diálogo entre design autoral e arte popular nordestina.",fotos:[]},
-  {id:"18335188696",n:"Joana Lira - estampas, cerâmica, decoração",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/joanalira/",c:"Artista gráfica e designer pernambucana radicada em São Paulo, com formação em design gráfico e trajetória que une estamparia, cerâmica e serigrafia. Foi responsável pela identidade visual do Carnaval do Recife por uma década. Suas peças — vasos, pratos, louças e esculturas — carregam pássaros, mandacarus e figuras nordestinas com brasilidade intensa e traço inconfundível. Abordagem visual que transita do popular ao contemporâneo.",fotos:[]},
-  {id:"18335188792",n:"Familia Candido - Juazeiro",l:"Juazeiro do Norte/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/arte.embarro/",c:"Núcleo familiar de artesanato cerâmico de Juazeiro do Norte, com tradição iniciada na década de 1960 por Maria de Lurdes Cândido Monteiro, reconhecida como Mestra da Cultura pelo Ceará em 2004. Produz esculturas e placas em barro com cenas da cultura popular do Cariri — reisado, romaria, cotidiano nordestino. As obras são assinadas com as iniciais de cada artesã, formando um código familiar de identificação.",fotos:[]},
-  {id:"18335185920",n:"Marcelo Santiago (artesão do beach park)",l:"Aquiraz/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"",c:"Artesão cerâmico de Aquiraz com presença reconhecida no Beach Park, onde produziu peças decorativas integradas ao ambiente hoteleiro. Trabalho voltado para a cerâmica ornamental com identidade regional, explorando formas e acabamentos que dialogam com o litoral e a cultura cearense.",fotos:[]},
-  {id:"18335186177",n:"Etnias Mundi",l:"São Paulo/SP",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/etniasmundi?g=5",c:"Estúdio baseado em São Paulo especializado em cerâmica de identidade étnica e cultural, com peças que reinterpretam referências de diferentes povos e tradições. Produção voltada para decoração de interiores com apelo contemporâneo e forte carga simbólica, conectando ancestralidade e design atual.",fotos:[]},
-  {id:"18335187359",n:"Mão na Massa - Ceará",l:"Candeias",p:"CERÂMICA/BARRO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/maonamassamvartesanato",c:"Coletivo artesanal cearense sediado em Candeias com produção em cerâmica e barro voltada para objetos decorativos e funcionais. Trabalho de base manual com forte vínculo comunitário, unindo técnica tradicional de modelagem ao barro com estética contemporânea acessível.",fotos:[]},
-  {id:"18335188949",n:"Micaella Alcântara",l:"Recife/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ateliemicaellaalcantara/",c:"Ceramista pernambucana com ateliê próprio em Recife, produzindo peças que combinam técnicas contemporâneas de modelagem com referências da cultura nordestina. Trabalho autoral com forte identidade visual, explorando texturas, formas orgânicas e paleta que remete ao território do Nordeste.",fotos:[]},
-  {id:"9383373327",n:"Ser Tão Mais - Ceará (Adornos em cerâmica e renda)",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/ser.tao.mais/",c:"Marca artesanal fortalezense que combina cerâmica e renda em adornos decorativos com identidade nordestina marcada. A proposta une duas das maiores expressões do artesanato do Ceará em peças que transitam entre o decorativo e o têxtil, com acabamento cuidado e apelo curatorial.",fotos:[]},
-  {id:"9383372818",n:"Adriana Siqueira",l:"Alagoas",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/adriana_artesa1/",c:"Artesã ceramista alagoana com produção focada em peças de barro modeladas à mão, explorando formas da cultura popular nordestina. Trabalho de base artesanal com forte vínculo territorial, produzindo objetos decorativos que expressam a identidade do Nordeste.",fotos:[]},
-  {id:"11002811409",n:"Olar - Heytor Borges",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/olardesign_/",c:"Estúdio de cerâmica contemporânea fortalezense fundado por Heytor Borges, com produção de peças utilitárias e decorativas que articulam técnica moderna e estética local. Trabalho com apelo ao design de interiores, unindo funcionalidade e identidade cearense em peças produzidas em série artesanal.",fotos:[]},
-  {id:"11061496486",n:"Ceramica O Baiano - Heitor",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/ceramicaobaiano/",c:"Ateliê de cerâmica de Fortaleza com produção artesanal voltada para peças decorativas e funcionais com forte identidade visual. Trabalho reconhecido pela qualidade do acabamento e pela capacidade de produção consistente, com peças que dialogam com ambientes residenciais contemporâneos.",fotos:[]},
-  {id:"11799180859",n:"Simone Sousa",l:"Vale do Catimbau/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/simonesouzaarte/?g=5",c:"Artista ceramista do Vale do Catimbau, em Pernambuco, região de singular riqueza cultural e natural. Produz peças em barro com referências da paisagem e da cultura do sertão pernambucano, unindo técnica artesanal e sensibilidade estética com forte senso de lugar.",fotos:[]},
-  {id:"11799715160",n:"Arrudiando a mesa",l:"Paraíba",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/arrudiandoamesa/?g=5",c:"Projeto paraibano de cerâmica e artes da mesa que reinterpreta a cultura popular nordestina em peças funcionais para uso cotidiano. Foco em louças e objetos de mesa com identidade regional, unindo estética contemporânea e referências culturais do Nordeste.",fotos:[]},
-  {id:"11799636537",n:"Dheny Santos Ceramista",l:"Pernambuco",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/dheny_santos.ceramista/?g=5",c:"Ceramista pernambucana com produção autoral focada em peças escultóricas e decorativas que exploram formas orgânicas e texturas. Trabalho com presença crescente no circuito de design e artesanato do Nordeste, com identidade visual própria e técnica apurada.",fotos:[]},
-  {id:"18335186088",n:"Tecê Studio® | Macramê e artefatos têxteis",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/C1z0DW5vwdp/",c:"Estúdio fortalezense especializado em macramê e artefatos têxteis contemporâneos. Produção artesanal que reinterpreta a técnica tradicional do nó em peças decorativas para interiores — painéis, luminárias, cortinas e objetos — com estética atual e forte apelo ao mercado de decoração autoral.",fotos:[]},
-  {id:"9383373464",n:"Sergio Melo",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/serggiomelodesign?igsh=MWRmM3FzMTFmZzloMg==",c:"Designer e artesão têxtil fortalezense com produção voltada para peças decorativas em fibras naturais e tecelagem artesanal. Trabalho que une rigor técnico e sensibilidade estética, com peças que dialogam com ambientes residenciais e hoteleiros de alto padrão, integrando identidade nordestina e linguagem contemporânea.",fotos:[]},
-  {id:"9383673869",n:"Pana - redes",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/panatextil/",c:"Marca fortalezense especializada em redes e artefatos têxteis artesanais produzidos com fibras naturais. Trabalha a tradição nordestina da rede como objeto de design, com modelos que transitam entre o uso funcional e a decoração de ambientes, valorizando a técnica manual e os materiais regionais.",fotos:[]},
-  {id:"11799574941",n:"Rendeiras Cariri",l:"Cariri/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/rendeiras_cariri/?g=5",c:"Coletivo de rendeiras da região do Cariri cearense, uma das maiores tradições têxteis do Nordeste. Produzem renda bilro e renda agulha com padrões geométricos e florais transmitidos por gerações, usando ferramentas tradicionais como espinhos de mandacaru como alfinetes. Artesanato de valor patrimonial e alto potencial decorativo.",fotos:[]},
-  {id:"11779015630",n:"Celina Hissa",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/celinahissa/",c:"Designer e artesã fortalezense com atuação no campo do design têxtil e da produção artesanal contemporânea. Participante ativa do circuito criativo de Fortaleza, integra debates sobre identidade do design cearense e produz peças que articulam técnica têxtil e conceito autoral.",fotos:[]},
-  {id:"11799629800",n:"Ceu de Labirinto",l:"Canoa Quebrada/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ceudelabirinto/",c:"Projeto artesanal sediado em Canoa Quebrada com produção de peças têxteis e decorativas de inspiração cósmica e artesanal. Trabalho que incorpora a atmosfera única do litoral cearense em objetos e artefatos com identidade visual marcante, voltados para decoração de espaços com personalidade.",fotos:[]},
-  {id:"18335185582",n:"Mestre Din",l:"Juazeiro do Norte/CE",p:"MADEIRA",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/mestre_din_alves/",c:"Escultor em madeira de Juazeiro do Norte, neto de xilógrafo e referência nacional da arte popular do Cariri. Entalhador desde os 13 anos, desenvolve estilo próprio com figuras atarracadas e expressivas que retratam personagens do reisado, romaria e cotidiano nordestino. Usa madeiras umburana, cedro e louro-rosa com ferramentas manuais. Teve peças na novela A Lei do Amor (Globo, 2016) e expôs no Carrousel do Louvre em Paris (2025).",fotos:[]},
-  {id:"10913814352",n:"Mestre Graciano (animais em madeira e pintura em tecido) - CE",l:"Juazeiro do Norte/CE",p:"MADEIRA",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/mestre_graciano26/",c:"Mestre entalhador de Juazeiro do Norte com trajetória na arte figurativa do Cariri cearense, filho de Manuel Graciano, reconhecido artista da região. Produz esculturas sem esboço prévio, deixando a peça se transformar ao longo do processo criativo. Obras nascidas da observação do imaginário popular nordestino, com técnica manual apurada e forte vínculo com a tradição escultórica do Cariri.",fotos:[]},
-  {id:"18335188111",n:"Nil Morais",l:"Juazeiro do Norte/CE",p:"MADEIRA",s:"VALIDADO",link:"Instagram - https://www.instagram.com/nilmoraiss/",c:"Escultor em madeira da nova geração de Juazeiro do Norte, com trabalho reconhecido no circuito nacional de arte popular. Integrou a exposição do artista Ai Weiwei em São Paulo (2018), tendo sua peça estampada na capa do catálogo. Retrata personagens como Maria Bonita, Lampião e São Jorge em esculturas com linguagem própria. Cofundador do Cumpadres Ateliê, espaço coletivo de produção em Juazeiro.",fotos:[]},
-  {id:"18335188418",n:"Pablyto - esculturas madeira, metal, mobiliário",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/leiviopablyto?igsh=c3Nuenludjk0M2Rl",c:"Artesão e escultor fortalezense Leivio Pablyto com produção que cruza madeira, metal e mobiliário autoral. Peças escultóricas com forte caráter decorativo e potencial de integração em projetos de interiores de alto padrão, explorando a combinação incomum de materiais e o acabamento artesanal cuidado.",fotos:[]},
-  {id:"9383482400",n:"Areka'a - Móveis em madeira rústica (móveis caros em madeira rustica, não passou na analise)",l:"São Paulo/SP",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/arekaabrasil/",c:"Marca paulistana de mobiliário em madeira rústica com produção de alto padrão e preços elevados. Peças com forte apelo estético e acabamento refinado, explorando a beleza natural da madeira bruta em móveis com identidade contemporânea. Avaliação interna indica custo elevado para o posicionamento atual da rede.",fotos:[]},
-  {id:"9383372566",n:"João Elleri - luminarias com troncos de arvore de podas da prefeitura e restos de obra",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/joaoeheliaatelier/",c:"Artesão e designer fortalezense que produz luminárias artesanais a partir de troncos de árvores retirados de podas da prefeitura e restos de obra. Trabalho com forte apelo sustentável, transformando matéria descartada em objetos decorativos de identidade urbana e ambiental. Atua no Ateliê Johelia junto à parceira.",fotos:[]},
-  {id:"9383373181",n:"Reflorart - Adornos em madeira (não conseguem atender alta demanda, muito amadores)",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/reflorart?igsh=MWM5eGl5NXJ3Z2NmNg==",c:"Projeto artesanal fortalezense de adornos decorativos em madeira com abordagem sustentável. Avaliação interna indica limitação de escala produtiva e nível ainda em desenvolvimento. Potencial criativo presente, mas perfil adequado a encomendas pontuais, não a parcerias de volume.",fotos:[]},
-  {id:"9383741969",n:"Anik (Madeserra) comercial analisar",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/madeserra/",c:"Ateliê e loja fortalezense de objetos e mobiliário em madeira com linha comercial a ser analisada. Produção que une madeiraria artesanal e design de produto, com potencial para parcerias em peças decorativas e funcionais para interiores residenciais e comerciais.",fotos:[]},
-  {id:"9383372413",n:"Estúdio cruzeta - mobiliário em madeira - comercial analisar",l:"Florianópolis/SC",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/estudiocruzeta/",c:"Estúdio de design e mobiliário em madeira sediado em Florianópolis com proposta comercial e estética contemporânea. Produção de móveis e peças decorativas com identidade de design autoral, a ser avaliada quanto à viabilidade de parceria comercial com a rede.",fotos:[]},
-  {id:"9383724279",n:"Studio Marcelo Magalhães móveis em troncos finos",l:"São Paulo/SP",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ateliermarcelomagalhaes/",c:"Designer e marceneiro paulistano reconhecido pelo mobiliário em troncos finos com identidade orgânica e acabamento de alto padrão. Trabalho que valoriza a forma natural da madeira em peças escultóricas com função de mobiliário — mesas, bancos, suportes —, integrando natureza e design contemporâneo. Credenciado como fornecedor da rede.",fotos:[]},
-  {id:"9383998727",n:"Bruno Camarotti",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/estudiocamarotti/",c:"Arquiteto e marceneiro cearense, fundador do Estúdio Camarotti em São Paulo. Trabalha exclusivamente com madeira maciça e marcenaria artesanal usando encaixes tradicionais sem pregos ou parafusos, técnica aprendida com Morito Ebine, reconhecido entre os 25 melhores marceneiros do mundo. Peças com identidade do litoral e do Cariri cearense. Credenciado como fornecedor da rede.",fotos:[]},
-  {id:"18076306877",n:"Gabriel - Studio Prosa - comercial analisar catalogo e tabela de valores",l:"São Paulo/SP",p:"MADEIRA",s:"AVALIAR",link:"ESTUDIO PROSA - https://www.instagram.com/estudioprosa/",c:"Estúdio paulistano de design de mobiliário em madeira com linha autoral e catálogo estruturado. Proposta estética contemporânea com forte cuidado no acabamento e na proporção das peças. Tabela de preços e catálogo disponíveis para análise comercial quanto à viabilidade de parceria como fornecedor.",fotos:[]},
-  {id:"11799613576",n:"Marcenaria Olinda",l:"Olinda/PE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/marcenariaolinda/?g=5",c:"Marcenaria artesanal de Olinda com produção de mobiliário e objetos em madeira com forte vínculo com a cultura e a arquitetura histórica da cidade. Trabalho que une técnica tradicional nordestina e identidade pernambucana em peças com apelo decorativo e funcional para ambientes com personalidade.",fotos:[]},
-  {id:"18335186905",n:"Patricia Veloso",l:"Fortaleza/CE",p:"PALAVRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/velosopatricia60/",c:"Curadora e gestora cultural fortalezense, referência no circuito literário e artístico do Ceará. Guarda e gerencia acervos fotográficos históricos do Ceará, incluindo obras de Gentil Barreira e Chico Albuquerque, com papel fundamental na preservação da memória visual cearense. Articuladora de conexões entre literatura, fotografia e artes visuais no estado.",fotos:[]},
-  {id:"18335187456",n:"Socorro Accioly",l:"Fortaleza/CE",p:"PALAVRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/socorroacioli/",c:"Escritora e poeta cearense com obra voltada para a literatura infantil e a poesia com raízes nordestinas. Presença consolidada no circuito literário do Ceará, com publicações que articulam identidade cultural e linguagem poética acessível. Figura representativa da produção literária fortalezense contemporânea.",fotos:[]},
-  {id:"18335187555",n:"Camara Cearense do Livro",l:"Fortaleza/CE",p:"PALAVRA",s:"AVALIAR",link:"",c:"Entidade fortalezense de fomento ao livro e à leitura no Ceará, responsável por articular autores, editores e o mercado editorial do estado. Interlocutora importante para projetos que envolvam literatura, cultura escrita e identidade cearense, com potencial de parceria em ações culturais e editoriais.",fotos:[]},
-  {id:"18335188873",n:"Almeida Luz - Fortaleza/CE",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/almeidadeluz/",c:"Artista urbano cearense com mais de 20 anos de carreira, reconhecido como Luz. Transita entre ilustração, quadrinhos, fotografia e grafite, com técnica em spray que resulta em traço inconfundível. Pintou murais em diversas cidades do Brasil e do exterior, com obras presentes em galerias, centros culturais e universidades. Vencedor do I Concurso Paz no Caos em Fortaleza (2017). Referência na arte urbana contemporânea do Nordeste.",fotos:[]},
-  {id:"10986965677",n:"Bete Paes - arte em tecido",l:"Recife/PE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/betepaes?igsh=czA5cW5jNGxib2Zx",c:"Artista pernambucana especializada em pintura sobre tecido, com produção que une técnica pictórica e suporte têxtil em peças decorativas de identidade nordestina. Trabalho com forte apelo visual e potencial de integração em ambientes residenciais e hoteleiros que buscam autenticidade e arte regional.",fotos:[]},
-  {id:"9383372871",n:"Alumiar - (tem as mesmas lumnárias que o Galpão)",l:"Fortaleza/CE",p:"TRANÇADO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/alumiardesign/",c:"Marca genuinamente cearense de luminárias artesanais fundada em 1998 por Armênia Rocha, designer de moda com especialização em iluminação. Produz peças únicas usando fio de algodão, cipó, palito de coqueiro e fibras naturais do Ceará, com estruturas em madeira, arame e ferro. Cada peça é confeccionada à mão, unindo inspiração indígena, folclore brasileiro e estética contemporânea. Referência nacional em iluminação artesanal autoral.",fotos:[]},
-  {id:"9383478531",n:"O Galpão - luminárias, decoração e movéis em fibras naturais (substituto Biasá)",l:"Rio de Janeiro/RJ",p:"TRANÇADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ogalpao/",c:"Ateliê carioca de referência nacional em mobiliário e decoração em fibras naturais — palha, ratan, junco e bambu. Produz luminárias, móveis e objetos decorativos com identidade tropical e acabamento de alto padrão, integrando técnica artesanal e design contemporâneo. Substituto estratégico ao Biasá na curadoria da rede.",fotos:[]},
-  {id:"9383490094",n:"Fibras Artes - Mobiliário em fibras Naturais",l:"Rio de Janeiro/RJ",p:"TRANÇADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/arte.fibras/",c:"Fornecedor carioca de mobiliário artesanal em fibras naturais com catálogo estruturado e tabela de preços disponível. Produz cadeiras, poltronas, mesas e peças decorativas usando fibras vegetais com acabamento que alia conforto, estética e durabilidade. Linha Garden e linha Natural disponíveis, com potencial de integração em projetos residenciais e hoteleiros.",fotos:[]},
-  {id:"10947572971",n:"TQN Artesanatos (cestos de palha, luminarias)",l:"Fortaleza/CE",p:"TRANÇADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/tqnartesanatos/",c:"Ateliê fortalezense de cestos de palha, luminárias e artefatos trançados com matérias-primas regionais. Produção artesanal com identidade nordestina e forte potencial decorativo para ambientes que buscam conexão com a estética do Ceará. Trabalho a ser avaliado quanto à capacidade produtiva e ao padrão de acabamento.",fotos:[]},
-  {id:"10946355765",n:"Ateliê MMassuci - Marcia Massuci (ceramica, macramê de juta, corda de sisal malha de aço - luminárias, vasos)",l:"São Paulo",p:"DIVERSOS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ateliemmassuci/",c:"Artesã paulistana com produção multimaterial que combina cerâmica, macramê de juta, corda de sisal e malha de aço em luminárias, vasos e objetos decorativos. Trabalho de alta sofisticação técnica que une materiais inusitados em peças de forte identidade contemporânea, com apelo ao mercado de design de interiores de alto padrão.",fotos:[]},
-  {id:"11799187767",n:"Zepa Arte",l:"Recife/PE",p:"DIVERSOS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/zepa.arte/?g=5",c:"Artista pernambucana com produção de objetos decorativos que articulam diferentes técnicas e materiais com forte identidade nordestina. Trabalho autoral com presença crescente no mercado de design e artesanato do Nordeste, produzindo peças com personalidade visual marcante para ambientes residenciais com curadoria.",fotos:[]},
-  {id:"18335186499",n:"Gentil Barreira - Fortaleza/CE",l:"Fortaleza/CE",p:"IMAGEM",s:"CREDENCIADO",link:"Fotografias - https://drive.google.com/drive/folders/1zI4A7qZde-yZTwFMGGoXqUKP0VQj46lG?usp=sharing",c:"Fotógrafo cearense autodidata e referência máxima da fotografia documental e autoral do Ceará. Atua desde os anos 1970 no registro de manifestações populares, povos indígenas e paisagens do sertão cearense. Obras presentes em acervos de importantes instituições culturais do Brasil. Projetos emblemáticos incluem Caminhos do Mar (1979-2010) e Coração Sertão (2013). Acervo guardado na Imagem Brasil Galeria, em Fortaleza.",fotos:[]},
-  {id:"18335186582",n:"Chico Albuquerque",l:"Fortaleza/CE",p:"IMAGEM",s:"AVALIAR",link:"",c:"Fotógrafo cearense histórico (1917-2000), figura de referência da fotografia no Ceará ao longo do século XX. Seu acervo analógico, com negativos de até 60 anos de idade, é preservado sob curadoria de Patrícia Veloso na Imagem Brasil Galeria. Registro documental e artístico que constitui parte fundamental da memória visual do Ceará.",fotos:[]},
-  {id:"11445742370",n:"Luiz Carlos Lima",l:"Fortaleza/CE",p:"IMAGEM",s:"AVALIAR",link:"Instagram - https://www.instagram.com/luizcarloslimaphotography/",c:"Fotógrafo fortalezense com produção autoral voltada para o registro da paisagem, da cultura e das pessoas do Ceará. Trabalho com sensibilidade documental e potencial de aplicação em projetos editoriais, decorativos e institucionais que buscam imagens de identidade cearense com qualidade técnica.",fotos:[]},
-  {id:"11445751544",n:"Celso Oliveira",l:"Fortaleza/CE",p:"IMAGEM",s:"AVALIAR",link:"Instagram - https://www.instagram.com/celsoliiveira/",c:"Fotógrafo fortalezense com produção visual focada em retratos e registros do cotidiano e da cultura do Ceará. Trabalho a ser avaliado quanto ao estilo e à possibilidade de parceria para produção de imagens com identidade nordestina para uso em projetos da rede.",fotos:[]},
-  {id:"11827911897",n:"Lumluz - Cris Lomonaco",l:"Recife/PE",p:"ILUMINAÇÃO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/lumluz",c:"Estúdio pernambucano de luminárias artesanais fundado por Cris Lomonaco, com produção de peças que exploram fibras naturais, palha e materiais da cultura popular nordestina. Trabalho com identidade regional e acabamento contemporâneo, voltado para ambientes residenciais e hoteleiros que buscam iluminação com personalidade e caráter artesanal.",fotos:[]},
-  {id:"11828213783",n:"Mauro Ducatti",l:"Fortaleza/CE",p:"MADEIRA",s:"VALIDADO",link:"Instagram - https://www.instagram.com/ducatti_mauro/",c:"Artesão e escultor fortalezense com produção em madeira e materiais naturais, explorando formas orgânicas e a estética do Ceará em peças decorativas e funcionais. Trabalho com identidade local e técnica artesanal apurada, com potencial de integração em projetos de interiores de alto padrão.",fotos:[]},
-  {id:"11828196543",n:"Nono Artesão",l:"Ilha do Ferro/AL",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/nono_artesao/",c:"Escultor da Ilha do Ferro, pequeno povoado às margens do Rio São Francisco no sertão de Alagoas, referência nacional em artesanato de madeira. Produz esculturas de figuras humanas, animais e seres fantásticos a partir de galhos e troncos da caatinga, seguindo a tradição inaugurada pelo Mestre Fernando Rodrigues dos Santos. Peças de alto valor artístico com forte apelo ao imaginário popular nordestino.",fotos:[]},
-  {id:"11828227827",n:"Boni Oficina de Arte",l:"Juazeiro do Norte/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/boni_oficinadearte/",c:"Ateliê de artesanato em madeira de Juazeiro do Norte com produção de esculturas e objetos decorativos inspirados na cultura popular do Cariri cearense. Trabalho que mantém viva a tradição escultórica da região, com peças de entalhe manual que retratam o imaginário religioso, festivo e cotidiano do Nordeste.",fotos:[]},
-  {id:"11828255971",n:"Andre Menezes",l:"Recife/PE",p:"MADEIRA",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/p/C7FkFGOO3WR/",c:"Artesão e escultor de Recife com produção em madeira e materiais naturais, com linguagem autoral que dialoga com a cultura popular pernambucana. Peças decorativas com identidade nordestina e técnica artesanal, a ser avaliado quanto ao portfólio e à viabilidade de parceria comercial com a rede.",fotos:[]},
-  {id:"11828260203",n:"Bitim",l:"Fortaleza/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/C9FUERfguBx/",c:"Artesão fortalezense com produção em madeira e materiais naturais, explorando a estética regional cearense em objetos decorativos e funcionais. Trabalho com identidade local e abordagem artesanal, integrado ao circuito criativo de Fortaleza e com potencial de parceria para projetos com curadoria autoral.",fotos:[]},
-  {id:"11828260654",n:"Vavan",l:"Ilha do Ferro/AL",p:"MADEIRA",s:"VALIDADO",link:"Instagram - https://www.instagram.com/artista_vavan/",c:"Artesão da Ilha do Ferro, comunidade alagoana às margens do Rio São Francisco reconhecida como um dos maiores polos de artesanato em madeira do Brasil. Produz esculturas com figuras do imaginário popular nordestino — animais, personagens, seres híbridos — a partir de galhos e troncos da caatinga, com técnica de entalhe manual herdada da tradição fundada pelo Mestre Fernando.",fotos:[]},
-  {id:"11828288970",n:"Izy Artes",l:"Uruburetama/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/izyartes/tagged/",c:"Ateliê de artesanato em madeira sediado em Uruburetama, no Ceará, com produção de objetos decorativos e esculturas com identidade regional. Trabalho artesanal que explora as técnicas e o imaginário do interior cearense em peças com apelo decorativo para ambientes com curadoria regional.",fotos:[]},
-  {id:"11828251758",n:"Patricia Barros Design",l:"Jaboatão dos Guararapes/PE",p:"LÚDICOS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/patriciabarrosdesign/",c:"Designer de Jaboatão dos Guararapes com produção de objetos lúdicos e decorativos com forte identidade visual e apelo ao universo infantil e criativo. Trabalho autoral que transita entre o design de produto e o artesanato, com peças coloridas e cheias de personalidade com referências da cultura nordestina.",fotos:[]},
-  {id:"11828281649",n:"Maria Amélia",l:"Ilha do Ferro/AL",p:"CERÂMICA/BARRO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/p/CfpRdeIt8Ti/?img_index=4",c:"Artesã ceramista da Ilha do Ferro, Alagoas, com produção em barro que integra a rica tradição artesanal do povoado às margens do Rio São Francisco. Peças modeladas à mão com referências do cotidiano e do imaginário popular nordestino, parte do ecossistema de arte popular que tornou a Ilha do Ferro referência nacional.",fotos:[]},
-  {id:"11828306762",n:"Ceramiquinho",l:"Recife/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ceramiquinho/",c:"Ateliê de cerâmica de Recife com produção de peças decorativas e utilitárias com identidade pernambucana. Trabalho artesanal que explora técnicas contemporâneas de modelagem em barro, com peças de caráter lúdico e colorido com forte apelo visual para ambientes residenciais com personalidade.",fotos:[]},
-  {id:"11828351821",n:"Sil da Capela",l:"Capela/AL",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/sildacapela/",c:"Artesã ceramista de Capela, Alagoas, com produção de peças em barro que expressam a cultura popular do interior nordestino. Trabalho modelado à mão com referências do cotidiano e do imaginário sertanejo, integrando a rica tradição ceramista do Nordeste em objetos decorativos com identidade territorial forte.",fotos:[]},
-  {id:"11828344776",n:"Nildo Zezinho",l:"Tracunhaém/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DJfMtm3ONkw/",c:"Ceramista de Tracunhaém, Pernambuco, município reconhecido como um dos maiores polos de cerâmica popular do Brasil. Produz esculturas e objetos em barro com figuras do imaginário nordestino — santos, bichos, personagens do cotidiano — seguindo a tradição ceramista que tornou Tracunhaém referência nacional no artesanato em barro.",fotos:[]},
-  {id:"11828406032",n:"Chica do Pote",l:"Campina Grande/PB",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/xicadopote__/",c:"Ceramista de Campina Grande, Paraíba, com produção de potes, vasos e esculturas em barro que dialogam com a tradição ceramista do Nordeste. Trabalho artesanal com identidade regional marcada, explorando formas utilitárias e decorativas com acabamento rústico e textura que remete à cultura popular nordestina.",fotos:[]},
-  {id:"11828382379",n:"Tapera das Artes",l:"Aquiraz/CE",p:"CERÂMICA/BARRO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/taperadasartes_/",c:"Ateliê de cerâmica e artesanato sediado em Aquiraz, Ceará, com produção de objetos decorativos e funcionais com identidade litorânea e regional. Trabalho artesanal com forte vínculo com a cultura cearense, produzindo peças que dialogam com a paisagem e o imaginário do litoral e do interior do estado.",fotos:[]},
-  {id:"11828371080",n:"Bosco Lisboa",l:"Juazeiro do Norte/CE",p:"CERÂMICA/BARRO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/boscolisboa/",c:"Ceramista e artesão de Juazeiro do Norte com produção em barro que integra a tradição ceramista do Cariri cearense. Trabalho modelado à mão com referências do imaginário popular — figuras religiosas, personagens do cotidiano, fauna e flora nordestina —, mantendo viva a tradição artesanal que torna Juazeiro do Norte referência nacional no artesanato em barro.",fotos:[]},
-  {id:"11828747215",n:"Rafael Artes",l:"Tracunhaém/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/rafael_artes_de_tracunhaem/?g=5",c:"Ceramista de Tracunhaém, Pernambuco, polo nacional de cerâmica popular. Produz esculturas e objetos em barro com figuras do imaginário nordestino, seguindo a tradição ceramista que tornou o município referência no artesanato brasileiro. Trabalho modelado à mão com técnica apurada e identidade visual marcada pela cultura popular do Nordeste.",fotos:[]},
-  {id:"11828768717",n:"Assis Escultor",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/assissculptor",c:"Ceramista e escultor fortalezense com produção de figuras e esculturas em barro com identidade cearense. Trabalho artesanal com linguagem própria, explorando personagens e formas do imaginário popular nordestino em peças decorativas com caráter autoral e potencial de integração em projetos com curadoria regional.",fotos:[]},
-  {id:"11828819430",n:"Aline Angeli",l:"Maceió/AL",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DFQ3wv6Pim6/?img_index=1",c:"Ceramista de Maceió com produção de peças em barro que articulam técnica contemporânea e identidade nordestina. Trabalho autoral com forte apelo visual, explorando formas orgânicas, texturas e acabamentos que dialogam com a cultura e a paisagem do Nordeste em peças decorativas com personalidade.",fotos:[]},
-  {id:"11828831173",n:"Helaine Maria Menezes",l:"Juazeiro do Norte/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DOqyfmKDcIs/?img_index=1",c:"Ceramista de Juazeiro do Norte com produção em barro que mantém viva a tradição ceramista do Cariri cearense. Trabalho modelado à mão com referências do imaginário popular e religioso do sertão nordestino, integrando a rica cadeia artesanal que torna Juazeiro do Norte polo nacional de artesanato em barro.",fotos:[]},
-  {id:"11828805400",n:"Concretaria",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/concretaria.brasil/",c:"Ateliê fortalezense especializado em objetos e peças decorativas em concreto com design contemporâneo. Produção que explora a estética industrial do concreto aparente em vasos, luminárias, tampos e objetos decorativos com identidade minimalista e apelo ao mercado de decoração de interiores de alto padrão.",fotos:[]},
-  {id:"11831278628",n:"MYV",l:"Paraíba",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/_____myv/",c:"Marca paraibana de cerâmica e objetos decorativos com identidade nordestina contemporânea. Produção artesanal que reinterpreta referências da cultura popular em peças com acabamento atual, voltadas para o mercado de decoração de interiores que busca artesanato com identidade regional e linguagem visual refinada.",fotos:[]},
-  {id:"11828874132",n:"Ozi Hand Made",l:"Vitória de Santo Antão/PE",p:"TRANÇADO",s:"AVALIAR",link:"",c:"Ateliê de artesanato trançado de Vitória de Santo Antão, Pernambuco, com produção de cestos, luminárias e objetos decorativos em fibras naturais. Trabalho artesanal com identidade nordestina e forte apelo decorativo, explorando técnicas de trançado e fibras da região em peças com acabamento contemporâneo.",fotos:[]},
-  {id:"11829545138",n:"Associação Macaúba",l:"Cariré/CE",p:"TRANÇADO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/mucauba/?g=5",c:"Associação artesanal de Cariré, Ceará, com produção coletiva de artefatos trançados em macaúba e outras fibras naturais do sertão cearense. Trabalho com forte vínculo comunitário e territorial, produzindo cestos, balaios e objetos decorativos que preservam técnicas tradicionais de trançado e valorizam a matéria-prima regional.",fotos:[]},
-  {id:"11828825413",n:"Casa de Maria",l:"Jaboatão dos Guararapes/PE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/projetocasademaria/",c:"Ateliê têxtil de Jaboatão dos Guararapes, Pernambuco, com produção de peças bordadas e tecidas com identidade nordestina. Trabalho artesanal que une técnica têxtil tradicional e sensibilidade contemporânea em peças decorativas e funcionais com forte apelo ao mercado de decoração autoral.",fotos:[]},
-  {id:"11829578136",n:"Renda de File Sitio Ipueiras",l:"Jaguaribe/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/renda.de.file.sitio.ipueiras/",c:"Produtores de renda de filé de Jaguaribe, Ceará, técnica têxtil tradicional que consiste em bordar sobre uma rede base de malha quadrada. Trabalho que preserva uma das manifestações têxteis mais singulares do Nordeste, produzindo peças decorativas com padrões geométricos e florais transmitidos por gerações com alto valor patrimonial.",fotos:[]},
-  {id:"11829586196",n:"Artesanato Mãe das Dores",l:"Juazeiro do Norte/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/artesanatomaedasdores/",c:"Coletivo artesanal de Juazeiro do Norte com produção de bordados e tecelagem com identidade do Cariri cearense. Trabalho que mantém viva a tradição têxtil da região em peças com forte caráter popular e cultural, produzindo bordados com referências do imaginário religioso e cotidiano do sertão nordestino.",fotos:[]},
-  {id:"11831291721",n:"Antonio Rabelo",l:"Quixeramubim/CE",p:"JOIAS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/antoniorabelo_ce/?hl=pt-br",c:"Joalheiro e artesão de Quixeramubim, Ceará, com produção de joias e adornos que incorporam materiais e referências da cultura cearense. Trabalho autoral que dialoga com a tradição artesanal do interior do Ceará em peças que combinam metais, pedras e elementos naturais da região com linguagem contemporânea.",fotos:[]},
-  {id:"11839146262",n:"Barraca da Neda",l:"Cajueiro da Praia/PI",p:"TRANÇADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/CzNB4ATLtP4/",c:"Artesã de Cajueiro da Praia, Piauí, com produção de artefatos trançados em palha de carnaúba e fibras naturais do litoral piauiense. Trabalho artesanal com forte identidade territorial, produzindo peças decorativas e utilitárias que expressam a cultura e os materiais da costa nordestina em objetos com apelo contemporâneo.",fotos:[]},
-  {id:"11839265638",n:"Mavinie",l:"Pedra Branca/CE",p:"DECORAÇÃO",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/maviniemotaoliveira/",c:"Marca de decoração de Pedra Branca, Ceará, com produção de objetos decorativos artesanais com identidade do interior cearense. Trabalho que explora materiais e referências culturais do sertão em peças com apelo contemporâneo, voltadas para ambientes residenciais que buscam identidade regional e autenticidade.",fotos:[]},
-  {id:"11839320221",n:"Azulerde",l:"Recife/PE",p:"JOIAS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/azulerde/?g=5",c:"Marca de joias e adornos de Recife com produção que explora materiais naturais do Nordeste — sementes, fibras, pedras e metais — em peças com identidade biofílica e contemporânea. Trabalho autoral com forte apelo ao mercado de acessórios com identidade regional e sustentabilidade, a ser avaliado quanto à viabilidade de integração decorativa em ambientes.",fotos:[]},
-  {id:"11839503628",n:"Tecelartes",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/tecelartes.ce?igsh=bzl2dGJ1cTJzNDdj",c:"Ateliê têxtil fortalezense com produção de peças tecidas e bordadas com identidade cearense contemporânea. Trabalho artesanal que articula técnica têxtil e design autoral em peças decorativas para interiores — tapetes, painéis, almofadas — com identidade nordestina e acabamento refinado.",fotos:[]},
-  {id:"11839541908",n:"Silva Berros",l:"Quixadá/CE",p:"IMAGEM",s:"VALIDADO",link:"Instagram - https://www.instagram.com/silvaberros/",c:"Fotógrafo e artista visual de Quixadá, Ceará, com produção focada na paisagem e na cultura do sertão cearense. Trabalho com sensibilidade documental e artística que captura a luz, as pedras e o cotidiano do interior do Ceará em imagens com forte identidade territorial e potencial de uso em projetos editoriais e decorativos.",fotos:[]},
-  {id:"11839792783",n:"Arte Fio Ce",l:"São Gonçalo do Amarante/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/artfio_ce/",c:"Ateliê de artesanato têxtil de São Gonçalo do Amarante, Ceará, com produção de peças em fibras naturais e bordado com identidade cearense. Trabalho artesanal com forte vínculo territorial, produzindo objetos decorativos e têxteis que expressam a cultura e os materiais do litoral e do interior do estado.",fotos:[]},
-  {id:"11839924992",n:"Andre Rocha Cardoso",l:"Cariri/CE",p:"COURO",s:"AVALIAR",link:"Site - https://rotasceart.sps.ce.gov.br/andre-rocha-cardoso/",c:"Artesão coureiro do Cariri cearense com produção de objetos e adornos em couro com identidade sertaneja. Trabalho que mantém viva a tradição da courearia nordestina em peças com técnica artesanal apurada — bolsas, cintos, adornos decorativos e funcionais — com forte vínculo cultural com a região do Cariri.",fotos:[]},
-  {id:"11840019105",n:"Atelie Casa de Papel",l:"Fortaleza/CE",p:"LÚDICOS",s:"AVALIAR",link:"Instragram - https://www.instagram.com/atelieacasadepapelbyvanderlei9/",c:"Ateliê fortalezense de objetos lúdicos e decorativos em papel e materiais alternativos, com produção autoral de caráter artesanal e criativo. Trabalho que explora a versatilidade do papel em peças escultóricas, decorativas e funcionais com identidade contemporânea e apelo ao universo do design autoral cearense.",fotos:[]},
-  {id:"11840058136",n:"Demostenes Fidelis",l:"Juazeiro do Norte/CE",p:"LÚDICOS",s:"AVALIAR",link:"Instagram - https://www.instagram.com/demostenesfidelis/",c:"Artista e artesão de Juazeiro do Norte com produção de objetos lúdicos e decorativos com identidade da cultura popular do Cariri cearense. Trabalho que explora o imaginário festivo e popular da região em peças com caráter lúdico, colorido e forte apelo à identidade cultural nordestina.",fotos:[]},
-  {id:"11841436441",n:"Ayla Guadalupe",l:"Recife/PE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/aylaguadalupe/",c:"Artesã e bordadeira de Recife com produção de peças têxteis bordadas com identidade nordestina contemporânea. Trabalho autoral que reinterpreta a tradição do bordado pernambucano em peças decorativas com linguagem visual própria, explorando cores vibrantes e padrões com referências da cultura popular do Nordeste.",fotos:[]},
-  {id:"11841477121",n:"Ricamo",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/dudaricamo?igsh=cXk4eWR1bHQxazV5",c:"Ateliê de bordado e artes têxteis fortalezense com produção de peças bordadas com identidade cearense contemporânea. Trabalho artesanal que articula técnica tradicional de bordado e estética atual em peças decorativas — almofadas, quadros, painéis — com forte apelo ao mercado de decoração autoral de interiores.",fotos:[]},
-  {id:"11841485037",n:"Drawxi",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DFJXOQIvM0I/?img_index=1",c:"Artista visual fortalezense com produção de pintura e ilustração com identidade contemporânea e referências da cultura cearense. Trabalho autoral com traço próprio, transitando entre suportes tradicionais e digitais em obras com apelo ao mercado de arte, decoração e comunicação visual com identidade nordestina.",fotos:[]},
-  {id:"11841513817",n:"Filho de mercúrio",l:"Recife/PE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/filhodemercurio/",c:"Artista visual de Recife com produção de pintura e arte contemporânea com identidade pernambucana. Trabalho autoral que dialoga com a cena artística do Nordeste em obras com linguagem visual contemporânea, a ser avaliado quanto ao portfólio e à viabilidade de parceria para projetos decorativos e institucionais.",fotos:[]},
-  {id:"11841520307",n:"Gabriela Rodrigues",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DKfEpIGugGt/?img_index=1",c:"Artista visual e pintora fortalezense com produção autoral de pintura com referências da cultura e da paisagem cearense. Trabalho com linguagem contemporânea e identidade local, produzindo telas e obras decorativas com forte apelo ao mercado de arte e decoração de interiores com curadoria regional.",fotos:[]},
-  {id:"11841546780",n:"Gabriel Arte",l:"Caicó/RN",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/biel.artlife/",c:"Artista visual de Caicó, Rio Grande do Norte, com produção de pintura e arte visual com identidade do sertão nordestino. Trabalho autoral que explora as referências culturais e paisagísticas do interior do Nordeste em obras com linguagem contemporânea e potencial de integração em projetos decorativos com identidade regional.",fotos:[]},
-  {id:"11841527302",n:"Lu Artes",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/_luartes_/",c:"Artista visual e pintora fortalezense com produção autoral de pintura decorativa com identidade cearense. Trabalho com linguagem acessível e colorida, produzindo obras que dialogam com a cultura e a paisagem do Ceará em peças com forte apelo decorativo para ambientes residenciais e comerciais.",fotos:[]},
-  {id:"11841554843",n:"Olga Maria",l:"Fortaleza/CE",p:"PINTURA",s:"VALIDADO",link:"Instagram - https://www.instagram.com/davilla.arte/",c:"Artista visual e pintora fortalezense com produção de pintura autoral com referências da cultura nordestina e da paisagem cearense. Trabalho com identidade regional e linguagem contemporânea, produzindo obras decorativas com forte apelo ao mercado de arte e decoração de interiores com curadoria regional.",fotos:[]},
-  {id:"11841574967",n:"Franklin Stein",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Site - https://www.fkstein.art/",c:"Artista visual e pintor fortalezense com produção autoral que dialoga com a cena de arte contemporânea do Ceará. Trabalho com linguagem visual própria, explorando referências culturais cearenses em obras com potencial de integração em projetos decorativos e institucionais com identidade nordestina.",fotos:[]},
-  {id:"11841552395",n:"Atelie Cardeal",l:"Preá/CE",p:"TECELAGEM/BORDADO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/ateliecardeal/",c:"Ateliê de artesanato têxtil do Preá, litoral oeste do Ceará, com produção de peças bordadas e tecidas com forte identidade do território. Trabalho que une a tradição do artesanato têxtil nordestino com a sensibilidade do litoral cearense, resultando em peças decorativas com alto valor cultural e apelo visual para projetos com identidade local.",fotos:[]},
-  {id:"11841566336",n:"José Lourenço Lira Nordestina",l:"Juazeiro do Norte/CE",p:"PALAVRA",s:"CREDENCIADO",link:"Instagram - https://www.instagram.com/p/DO7UrpRDrNS/",c:"Poeta e cordelista de Juazeiro do Norte, guardião da tradição da literatura de cordel do Cariri cearense. Produz folhetos com xilogravuras e versos que retratam o imaginário popular nordestino — santos, heróis, paisagens e causos do sertão — mantendo viva uma das expressões culturais mais genuínas do Brasil e com alto potencial de aplicação em projetos editoriais e decorativos.",fotos:[]},
-  {id:"11841599134",n:"Arthur Grangeia",l:"São Paulo/SP",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DQnNfoqibpk/",c:"Artista visual e pintor paulistano com produção autoral de pintura contemporânea. Trabalho com linguagem visual própria e presença crescente no mercado de arte brasileiro, a ser avaliado quanto à possibilidade de parceria para projetos decorativos e institucionais que busquem obras autorais de alto padrão.",fotos:[]},
-  {id:"11841636209",n:"Francoli",l:"Juazeiro do Norte/CE",p:"PALAVRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/mestre_francorli/?g=5",c:"Poeta e artista da palavra de Juazeiro do Norte com produção enraizada na literatura popular do Cariri cearense. Trabalho que dialoga com a tradição oral e escrita do Nordeste — cordel, repente, poesia de bancada — em versos que retratam o imaginário cultural, religioso e cotidiano da região, com alto potencial de aplicação em projetos editoriais e instalações com identidade cultural.",fotos:[]},
-  {id:"11841631255",n:"Junior Porto",l:"Fortaleza/CE",p:"VIDRO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/juniorporto55/",c:"Artista e designer fortalezense com produção em vidro artístico, explorando a transparência, a cor e a luz em peças decorativas autorais. Trabalho de técnica singular no cenário artesanal cearense, produzindo objetos com identidade contemporânea que dialogam com a iluminação e a decoração de ambientes de alto padrão.",fotos:[]},
-  {id:"11841674455",n:"Chico Emilia",l:"Quixadá/CE",p:"MESTRE DA CULTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/chico_emilia/",c:"Mestre da Cultura de Quixadá, Ceará, reconhecido pelo governo estadual como guardião de saberes e fazeres tradicionais do interior cearense. Trabalho enraizado na cultura popular da região do sertão, preservando e transmitindo expressões artísticas e artesanais de valor patrimonial imaterial com alto significado cultural para o projeto Ceará Autoral.",fotos:[]},
-  {id:"11841683462",n:"Mestre Bezinho",l:"Ibimirim/PE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/mestre_bezinho/",c:"Mestre entalhador de Ibimirim, Pernambuco, com produção de esculturas em madeira enraizadas na tradição da arte popular do sertão pernambucano. Trabalho de entalhe manual com figuras do imaginário nordestino — animais da caatinga, personagens religiosos, cenas do cotidiano sertanejo —, mantendo viva uma expressão artística de alto valor cultural e patrimonial.",fotos:[]},
-  {id:"11842298630",n:"Jair Monteiro Artesão",l:"Tracunhaém/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/BjXQZrxF4kf/",c:"Ceramista de Tracunhaém, Pernambuco, polo nacional de cerâmica popular. Produz esculturas e objetos em barro com figuras do imaginário nordestino, seguindo a tradição ceramista que tornou o município referência no artesanato brasileiro. Trabalho modelado à mão com técnica apurada e identidade visual marcada pela cultura popular do Nordeste.",fotos:[]},
-  {id:"11842344267",n:"Dheny Santos Ceramista",l:"Tracunhaém/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DM-t9GTO20B/",c:"Ceramista de Tracunhaém, Pernambuco, com produção autoral de esculturas e objetos em barro que exploram formas orgânicas e o imaginário popular nordestino. Trabalho inserido no polo ceramista do município, reconhecido nacionalmente pela qualidade e pela riqueza cultural de sua produção artesanal em barro.",fotos:[]},
-  {id:"11842339204",n:"Edson Batista",l:"Aracajú/SE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/CjMHNx1gBGS/",c:"Ceramista de Aracaju, Sergipe, com produção artesanal em barro que articula técnica contemporânea e referências da cultura popular nordestina. Trabalho com identidade regional marcada, explorando formas, texturas e acabamentos do universo ceramista do Nordeste em peças decorativas com apelo a ambientes residenciais com curadoria.",fotos:[]},
-  {id:"11842353599",n:"Meraki Entre Fios",l:"Preá/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DRQVqFvEaFm/",c:"Ateliê têxtil do Preá, litoral oeste do Ceará, com produção de peças bordadas e tecidas com forte identidade do território. Nome de origem grega que significa fazer algo com alma e amor — filosofia que se expressa em cada peça produzida à mão com fibras naturais e referências da cultura e da paisagem do litoral cearense.",fotos:[]},
-  {id:"11842347829",n:"Merivaldo Arte",l:"Belem/PA",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DV6YgDOCLDU/",c:"Ceramista e artista popular de Belém do Pará com produção em barro que articula referências da cultura amazônica e da arte popular brasileira. Trabalho com identidade territorial marcada, explorando figuras, formas e imaginários da Amazônia em peças decorativas com apelo contemporâneo e forte caráter de arte popular.",fotos:[]},
-  {id:"11842410477",n:"Olaria Ocre",l:"Recife/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/olaria_ocre/?g=5",c:"Ateliê de cerâmica contemporânea de Recife com produção de peças decorativas e utilitárias em barro com identidade pernambucana. Trabalho que articula técnica ceramista e design autoral, explorando a paleta do ocre e das terras nordestinas em peças com acabamento refinado e forte apelo ao mercado de interiores com curadoria.",fotos:[]},
-  {id:"11842405237",n:"Casa Obi",l:"Piauí",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/casa.obi/?g=5",c:"Marca piauiense de artesanato têxtil com produção de peças tecidas e bordadas com identidade da cultura do Piauí. Trabalho artesanal com forte vínculo territorial, produzindo objetos decorativos e têxteis que expressam os saberes e fazeres tradicionais do estado em peças com acabamento contemporâneo e alto potencial decorativo.",fotos:[]},
-  {id:"11842467423",n:"Boro Sandes",l:"Ilha do Ferro/AL",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/C01g-ggAH5S/",c:"Escultor da Ilha do Ferro, comunidade alagoana às margens do Rio São Francisco reconhecida como polo nacional de artesanato em madeira. Produz esculturas com figuras do imaginário popular nordestino a partir de galhos e troncos da caatinga, com técnica de entalhe manual herdada da tradição fundada pelo Mestre Fernando Rodrigues dos Santos.",fotos:[]},
-  {id:"11842455696",n:"Hamsá",l:"São Miguel do Gostoso/RN",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/hamsamarcenaria/?g=5",c:"Ateliê de São Miguel do Gostoso, Rio Grande do Norte, com produção de objetos e mobiliário em madeira com identidade do litoral nordestino. Trabalho artesanal que explora a estética orgânica da madeira em peças decorativas e funcionais com forte senso de lugar, dialogando com a atmosfera tranquila e singular do litoral potiguar.",fotos:[]},
-  {id:"11842471147",n:"Adonias",l:"Ilha do Ferro/AL",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/donias2020/?g=5",c:"Escultor da Ilha do Ferro, Alagoas, com produção de esculturas em madeira enraizadas na tradição artística do pequeno povoado às margens do São Francisco. Produz figuras do imaginário popular nordestino — animais, personagens, seres fantásticos — a partir de galhos e troncos da caatinga, com técnica manual e identidade visual própria dentro da rica escola artística local.",fotos:[]},
-  {id:"11842489179",n:"Marquinhos Artesão",l:"Ilha do Ferro/AL",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DOOb-f8jvnY/",c:"Escultor da Ilha do Ferro, Alagoas, integrante da comunidade artística que tornou o pequeno povoado sertanejo referência nacional em esculturas em madeira. Produz peças com figuras do imaginário popular a partir de galhos e troncos da caatinga, com entalhe manual e linguagem visual própria dentro da tradição inaugurada pelo Mestre Fernando Rodrigues dos Santos.",fotos:[]},
-  {id:"11842502917",n:"Molda Lab",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DJKut_eSoLK/",c:"Laboratório criativo fortalezense de cerâmica e design com produção de peças decorativas e utilitárias que articulam experimentação técnica e identidade contemporânea. Trabalho com abordagem de design de produto aplicado à cerâmica, explorando formas, materiais e processos com rigor estético e apelo ao mercado de interiores de alto padrão.",fotos:[]},
-  {id:"11842524713",n:"Mano de Baé",l:"Tracunhaém/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/manodebaeceramista?g=5",c:"Ceramista de Tracunhaém, Pernambuco, polo ceramista de referência nacional, com produção de esculturas e objetos em barro com identidade popular nordestina. Trabalho modelado à mão com figuras do imaginário cultural e cotidiano do Nordeste, integrando a tradição ceramista que tornou Tracunhaém um dos municípios mais importantes do artesanato brasileiro.",fotos:[]},
-  {id:"11842509720",n:"Jota Melo",l:"Fortaleza/CE",p:"IMAGEM",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ojotapeg/?g=5",c:"Fotógrafo e artista visual fortalezense com produção focada na cultura, na paisagem e nas pessoas do Ceará. Trabalho com sensibilidade documental e artística que captura a identidade cearense em imagens com potencial de uso em projetos editoriais, decorativos e institucionais, integrando o circuito criativo de Fortaleza com olhar próprio sobre o Nordeste.",fotos:[]},
-  {id:"11842535525",n:"Isabella Siqueira",l:"Jambeiro/SP",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/isabella.siqueira_/?g=5",c:"Artista visual e pintora de Jambeiro, São Paulo, com produção autoral de pintura que dialoga com referências da natureza e da cultura brasileira. Trabalho com linguagem visual contemporânea e identidade própria, a ser avaliado quanto ao portfólio e à viabilidade de parceria para projetos decorativos e institucionais com curadoria autoral.",fotos:[]},
-  {id:"11842536084",n:"Ser Tão Fort",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DSfdavfjZyO/?img_index=1",c:"Marca fortalezense de artesanato têxtil com identidade do sertão cearense contemporâneo. Produção de peças bordadas e tecidas com referências da cultura nordestina, transitando entre o artesanal e o autoral em objetos decorativos com forte senso de lugar e apelo ao mercado de decoração com identidade regional.",fotos:[]},
-  {id:"11842554161",n:"Studio Aho",l:"Fortaleza/CE",p:"TECELAGEM/BORDADO",s:"VALIDADO",link:"Instagram - https://www.instagram.com/p/DUZPWlfAbIb/",c:"Estúdio criativo fortalezense com produção de objetos e peças têxteis autorais com identidade contemporânea e referências da cultura cearense. Trabalho que articula design, artesanato e conceito em peças decorativas com acabamento refinado, posicionado no segmento de decoração autoral de alto padrão com identidade nordestina.",fotos:[]},
-  {id:"11842559350",n:"Joelson Gomes",l:"Pernambuco",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/joelsonbiu/?g=5",c:"Ceramista pernambucano com produção de esculturas e objetos em barro com identidade da cultura popular do Nordeste. Trabalho artesanal com técnica apurada e linguagem visual própria, explorando figuras e formas do imaginário nordestino em peças decorativas com apelo ao mercado de arte popular e decoração com curadoria regional.",fotos:[]},
-  {id:"11842578860",n:"Clemilton Arte",l:"Pao de Açucar/AL",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/DUjuEotEVuz/",c:"Escultor de Pão de Açúcar, Alagoas, município que abriga a Ilha do Ferro, polo nacional de artesanato em madeira. Produz esculturas em madeira com figuras do imaginário popular nordestino, com técnica de entalhe manual e identidade visual enraizada na tradição artística da região às margens do Rio São Francisco.",fotos:[]},
-  {id:"11842605700",n:"Ju Choo",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/ju.chooo/?e=26e1b1b9-b223-4727-a541-0a31be389908&g=5",c:"Artista visual e pintora fortalezense com produção autoral de pintura e arte decorativa com referências da cultura cearense. Trabalho com linguagem visual própria e colorida, produzindo obras que dialogam com a identidade e a paisagem do Ceará em peças com forte apelo decorativo para ambientes residenciais e comerciais com curadoria regional.",fotos:[]},
-  {id:"11855452531",n:"Um tanto de arte",l:"Salvador/BA",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://instagram/",c:"Marca de cerâmica e objetos decorativos de Salvador, Bahia, com produção artesanal que articula técnica ceramista e identidade cultural do Nordeste. Trabalho com forte apelo visual e acabamento contemporâneo, explorando formas e referências da cultura baiana e nordestina em peças decorativas voltadas para ambientes residenciais com curadoria autoral.",fotos:[]},
-  {id:"11989859306",n:"Anna Beatriz Machado",l:"São Paulo/SP",p:"DECORAÇÃO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/_studioannamachado?igsh=dHR6M3BsdnliaWU0",c:"",fotos:[]},
-  {id:"11989864024",n:"De Paulo Designer Textil",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.behance.net/depaulodesigner",c:"Designer Textil",fotos:[]},
-  {id:"11990272593",n:"Luciano Bezerra da Silva",l:"Juazeiro do Norte/CE",p:"MADEIRA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/p/Ci-gEcsuKs0/?img_index=1",c:"Artista que produz malas de romeiro",fotos:[]},
-  {id:"12011670270",n:"Aldirio Ribeiro",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/aldirio_ribeiro/",c:"",fotos:[]},
-  {id:"12011718169",n:"Célio Gurgel",l:"",p:"METAL",s:"AVALIAR",link:"Instagram - https://www.instagram.com/celio_gurgel/",c:"",fotos:[]},
-  {id:"12039373855",n:"Diego Rosendo",l:"Recife/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/diegorosendo?igsh=empzN2xja25nbDhm",c:"",fotos:[]},
-  {id:"12039428886",n:"Mestre Nena",l:"Santo Agostinho/PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/mestre_nena_?igsh=MXBjNHBiZzlocHdqMA==",c:"",fotos:[]},
-  {id:"12138269695",n:"Marcos Serafim",l:"Fortaleza/CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"Instagram - https://www.instagram.com/marcos_serafim.arte/",c:"",fotos:[]},
-  {id:"12141459863",n:"Julha Art",l:"Fortaleza/CE",p:"PINTURA",s:"AVALIAR",link:"Instagram - https://www.instagram.com/julha.art/",c:"",fotos:[]},
-  {id:"11989883915",n:"Dashboard Ceará Autoral",l:"",p:"DIVERSOS",s:"AVALIAR",link:"",c:"",fotos:[]}
+  // CERÂMICA/BARRO
+  {id:"18335188521",n:"Tulio Paracampos",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DPwTOktDvk6/",c:"Artista plástico, ceramista e designer cearense formado pelo Instituto Dragão do Mar (2003). Atua nas artes visuais desde 1997 e transita entre cerâmica, gravura e escultura com linguagem concretista e modular. Já expôs em cinco edições da Casa Cor Ceará e em mostras internacionais. Referência no diálogo entre design autoral e arte popular nordestina.",img:"tulio-paracampos"},
+  {id:"18335188696",n:"Joana Lira",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/joanalira/",c:"Artista gráfica e designer pernambucana radicada em São Paulo, responsável pela identidade visual do Carnaval do Recife por uma década. Suas peças — vasos, pratos, louças e esculturas — carregam pássaros, mandacarus e figuras nordestinas com brasilidade intensa. Abordagem que transita do popular ao contemporâneo.",img:"joana-lira"},
+  {id:"18335188792",n:"Familia Candido",l:"Juazeiro do Norte, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/arte.embarro/",c:"Núcleo familiar de artesanato cerâmico de Juazeiro do Norte, com tradição iniciada na década de 1960 por Maria de Lurdes Cândido Monteiro, reconhecida como Mestra da Cultura pelo Ceará em 2004. Produz esculturas em barro com cenas da cultura popular do Cariri — reisado, romaria, cotidiano nordestino.",img:"familia-candido"},
+  {id:"18335185920",n:"Marcelo Santiago",l:"Aquiraz, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:null,c:"Artesão cerâmico de Aquiraz com presença reconhecida no Beach Park, onde produziu peças decorativas integradas ao ambiente hoteleiro. Trabalho voltado para a cerâmica ornamental com identidade regional, explorando formas e acabamentos que dialogam com o litoral e a cultura cearense.",img:"marcelo-santiago"},
+  {id:"18335186177",n:"Etnias Mundi",l:"São Paulo, SP",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/etniasmundi",c:"Estúdio baseado em São Paulo especializado em cerâmica de identidade étnica e cultural, com peças que reinterpretam referências de diferentes povos e tradições. Produção voltada para decoração de interiores com apelo contemporâneo e forte carga simbólica, conectando ancestralidade e design atual.",img:"etnias-mundi"},
+  {id:"18335187359",n:"Mão na Massa Ceará",l:"Candeias",p:"CERÂMICA/BARRO",s:"VALIDADO",link:"https://www.instagram.com/maonamassamvartesanato",c:"Coletivo artesanal cearense sediado em Candeias com produção em cerâmica e barro voltada para objetos decorativos e funcionais. Trabalho de base manual com forte vínculo comunitário, unindo técnica tradicional de modelagem ao barro com estética contemporânea acessível.",img:"mao-na-massa-ceara"},
+  {id:"18335188949",n:"Micaella Alcântara",l:"Recife, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/ateliemicaellaalcantara/",c:"Ceramista pernambucana com ateliê próprio em Recife, produzindo peças que combinam técnicas contemporâneas de modelagem com referências da cultura nordestina. Trabalho autoral com forte identidade visual, explorando texturas, formas orgânicas e paleta que remete ao território do Nordeste.",img:"micaella-alcantara"},
+  {id:"9383373327",n:"Ser Tão Mais",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/ser.tao.mais/",c:"Marca artesanal fortalezense que combina cerâmica e renda em adornos decorativos com identidade nordestina marcada. A proposta une duas das maiores expressões do artesanato do Ceará em peças que transitam entre o decorativo e o têxtil, com acabamento cuidado e apelo curatorial.",img:"ser-tao-mais"},
+  {id:"9383372818",n:"Adriana Siqueira",l:"Alagoas",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/adriana_artesa1/",c:"Artesã ceramista alagoana com produção focada em peças de barro modeladas à mão, explorando formas da cultura popular nordestina. Trabalho de base artesanal com forte vínculo territorial, produzindo objetos decorativos que expressam a identidade do Nordeste.",img:"adriana-siqueira"},
+  {id:"11002811409",n:"Olar · Heytor Borges",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/olardesign_/",c:"Estúdio de cerâmica contemporânea fortalezense fundado por Heytor Borges, com produção de peças utilitárias e decorativas que articulam técnica moderna e estética local. Trabalho com apelo ao design de interiores, unindo funcionalidade e identidade cearense em peças produzidas em série artesanal.",img:"olar-heytor-borges"},
+  {id:"11061496486",n:"Cerâmica O Baiano",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"VALIDADO",link:"https://www.instagram.com/ceramicaobaiano/",c:"Ateliê de cerâmica de Fortaleza com produção artesanal voltada para peças decorativas e funcionais com forte identidade visual. Reconhecido pela qualidade do acabamento e pela capacidade de produção consistente, com peças que dialogam com ambientes residenciais contemporâneos.",img:"ceramica-o-baiano"},
+  {id:"11799180859",n:"Simone Sousa",l:"Vale do Catimbau, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/simonesouzaarte/",c:"Artista ceramista do Vale do Catimbau, em Pernambuco, região de singular riqueza cultural e natural. Produz peças em barro com referências da paisagem e da cultura do sertão pernambucano, unindo técnica artesanal e sensibilidade estética com forte senso de lugar.",img:"simone-sousa"},
+  {id:"11799715160",n:"Arrudiando a Mesa",l:"Paraíba",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/arrudiandoamesa/",c:"Projeto paraibano de cerâmica e artes da mesa que reinterpreta a cultura popular nordestina em peças funcionais para uso cotidiano. Foco em louças e objetos de mesa com identidade regional, unindo estética contemporânea e referências culturais do Nordeste.",img:"arrudiando-a-mesa"},
+  {id:"11799636537",n:"Dheny Santos Ceramista",l:"Pernambuco",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/dheny_santos.ceramista/",c:"Ceramista pernambucana com produção autoral focada em peças escultóricas e decorativas que exploram formas orgânicas e texturas. Trabalho com presença crescente no circuito de design e artesanato do Nordeste, com identidade visual própria e técnica apurada.",img:"dheny-santos-ceramista"},
+  {id:"11828281649",n:"Maria Amélia",l:"Ilha do Ferro, AL",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/CfpRdeIt8Ti/",c:"Artesã ceramista da Ilha do Ferro, Alagoas, com produção em barro que integra a rica tradição artesanal do povoado às margens do Rio São Francisco. Peças modeladas à mão com referências do cotidiano e do imaginário popular nordestino.",img:"maria-amelia-ceramista-ilha-do-ferro"},
+  {id:"11828306762",n:"Ceramiquinho",l:"Recife, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/ceramiquinho/",c:"Ateliê de cerâmica de Recife com produção de peças decorativas e utilitárias com identidade pernambucana. Trabalho artesanal que explora técnicas contemporâneas de modelagem em barro, com peças de caráter lúdico e colorido com forte apelo visual para ambientes residenciais com personalidade.",img:"ceramiquinho-recife"},
+  {id:"11828351821",n:"Sil da Capela",l:"Capela, AL",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/sildacapela/",c:"Artesã ceramista de Capela, Alagoas, com produção de peças em barro que expressam a cultura popular do interior nordestino. Trabalho modelado à mão com referências do cotidiano e do imaginário sertanejo, integrando a rica tradição ceramista do Nordeste.",img:"sil-da-capela-ceramista"},
+  {id:"11828344776",n:"Nildo Zezinho",l:"Tracunhaém, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DJfMtm3ONkw/",c:"Ceramista de Tracunhaém, Pernambuco, município reconhecido como um dos maiores polos de cerâmica popular do Brasil. Produz esculturas e objetos em barro com figuras do imaginário nordestino — santos, bichos, personagens do cotidiano — seguindo a tradição ceramista que tornou Tracunhaém referência nacional no artesanato.",img:"nildo-zezinho-ceramista-tracunhaem"},
+  {id:"11828331376",n:"Mão na Massa",l:"Juazeiro do Norte, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/maonamassamvartesanato",c:"Coletivo artesanal de Juazeiro do Norte com produção em cerâmica e barro com identidade do Cariri cearense. Trabalho de base manual com forte vínculo com a tradição ceramista da região.",img:"mao-na-massa-juazeiro"},
+  {id:"11828406032",n:"Chica do Pote",l:"Campina Grande, PB",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/xicadopote__/",c:"Ceramista de Campina Grande, Paraíba, com produção de potes, vasos e esculturas em barro que dialogam com a tradição ceramista do Nordeste. Trabalho artesanal com identidade regional marcada, explorando formas utilitárias e decorativas com acabamento rústico que remete à cultura popular nordestina.",img:"chica-do-pote-ceramista"},
+  {id:"11828382379",n:"Tapera das Artes",l:"Aquiraz, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/taperadasartes_/",c:"Ateliê de cerâmica e artesanato sediado em Aquiraz, Ceará, com produção de objetos decorativos e funcionais com identidade litorânea e regional. Trabalho artesanal com forte vínculo com a cultura cearense, dialogando com a paisagem e o imaginário do litoral e do interior do estado.",img:"tapera-das-artes-aquiraz"},
+  {id:"11828371080",n:"Bosco Lisboa",l:"Juazeiro do Norte, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/boscolisboa/",c:"Ceramista e artesão de Juazeiro do Norte com produção em barro que integra a tradição ceramista do Cariri cearense. Trabalho modelado à mão com referências do imaginário popular — figuras religiosas, personagens do cotidiano, fauna e flora nordestina.",img:"bosco-lisboa-ceramista-juazeiro"},
+  {id:"11828747215",n:"Rafael Artes",l:"Tracunhaém, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/rafael_artes_de_tracunhaem/",c:"Ceramista de Tracunhaém, polo nacional de cerâmica popular. Produz esculturas e objetos em barro com figuras do imaginário nordestino, seguindo a tradição ceramista que tornou o município referência no artesanato brasileiro.",img:"rafael-artes-tracunhaem"},
+  {id:"11828768717",n:"Assis Escultor",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/assissculptor",c:"Ceramista e escultor fortalezense com produção de figuras e esculturas em barro com identidade cearense. Trabalho artesanal com linguagem própria, explorando personagens e formas do imaginário popular nordestino.",img:"assis-sculptor-ceramista-fortaleza"},
+  {id:"11828819430",n:"Aline Angeli",l:"Maceió, AL",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DFQ3wv6Pim6/",c:"Ceramista de Maceió com produção de peças em barro que articulam técnica contemporânea e identidade nordestina. Trabalho autoral com forte apelo visual, explorando formas orgânicas, texturas e acabamentos que dialogam com a cultura e a paisagem do Nordeste.",img:"aline-angeli-ceramista-maceio"},
+  {id:"11828831173",n:"Helaine Maria Menezes",l:"Juazeiro do Norte, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DOqyfmKDcIs/",c:"Ceramista de Juazeiro do Norte com produção em barro que mantém viva a tradição ceramista do Cariri cearense. Trabalho modelado à mão com referências do imaginário popular e religioso do sertão nordestino.",img:"helaine-maria-menezes-ceramista"},
+  {id:"11828805400",n:"Concretaria",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/concretaria.brasil/",c:"Ateliê fortalezense especializado em objetos e peças decorativas em concreto com design contemporâneo. Explora a estética industrial do concreto aparente em vasos, luminárias, tampos e objetos decorativos com identidade minimalista e apelo ao mercado de decoração de alto padrão.",img:"concretaria-fortaleza"},
+  {id:"11831278628",n:"MYV",l:"Paraíba",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/_____myv/",c:"Marca paraibana de cerâmica e objetos decorativos com identidade nordestina contemporânea. Produção artesanal que reinterpreta referências da cultura popular em peças com acabamento atual, voltadas para o mercado de decoração com identidade regional.",img:"myv-ceramica-paraiba"},
+  {id:"11842298630",n:"Jair Monteiro Artesão",l:"Tracunhaém, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/BjXQZrxF4kf/",c:"Ceramista de Tracunhaém, polo nacional de cerâmica popular. Produz esculturas e objetos em barro com figuras do imaginário nordestino, seguindo a tradição ceramista que tornou o município referência no artesanato brasileiro.",img:null},
+  {id:"11842344267",n:"Dheny Santos",l:"Tracunhaém, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DM-t9GTO20B/",c:"Ceramista de Tracunhaém com produção autoral de esculturas e objetos em barro que exploram formas orgânicas e o imaginário popular nordestino. Inserido no polo ceramista do município, reconhecido nacionalmente pela qualidade de sua produção artesanal."},
+  {id:"11842339204",n:"Edson Batista",l:"Aracajú, SE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/CjMHNx1gBGS/",c:"Ceramista de Aracaju, Sergipe, com produção artesanal em barro que articula técnica contemporânea e referências da cultura popular nordestina. Trabalho com identidade regional marcada, explorando formas, texturas e acabamentos do universo ceramista do Nordeste.",img:null},
+  {id:"11842347829",n:"Merivaldo Arte",l:"Belém, PA",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DV6YgDOCLDU/",c:"Ceramista e artista popular de Belém do Pará com produção em barro que articula referências da cultura amazônica e da arte popular brasileira. Trabalho com identidade territorial marcada, explorando figuras e formas do imaginário da Amazônia.",img:null},
+  {id:"11842410477",n:"Olaria Ocre",l:"Recife, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/olaria_ocre/",c:"Ateliê de cerâmica contemporânea de Recife com produção de peças decorativas e utilitárias em barro com identidade pernambucana. Articula técnica ceramista e design autoral, explorando a paleta do ocre e das terras nordestinas em peças com acabamento refinado.",img:null},
+  {id:"11842502917",n:"Molda Lab",l:"Fortaleza, CE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/p/DJKut_eSoLK/",c:"Laboratório criativo fortalezense de cerâmica e design com produção de peças que articulam experimentação técnica e identidade contemporânea. Abordagem de design de produto aplicado à cerâmica, explorando formas, materiais e processos com rigor estético.",img:null},
+  {id:"11842524713",n:"Mano de Baé",l:"Tracunhaém, PE",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/manodebaeceramista",c:"Ceramista de Tracunhaém, polo ceramista de referência nacional, com produção de esculturas e objetos em barro com identidade popular nordestina. Trabalho modelado à mão com figuras do imaginário cultural e cotidiano do Nordeste.",img:null},
+  {id:"11842559350",n:"Joelson Gomes",l:"Pernambuco",p:"CERÂMICA/BARRO",s:"AVALIAR",link:"https://www.instagram.com/joelsonbiu/",c:"Ceramista pernambucano com produção de esculturas e objetos em barro com identidade da cultura popular do Nordeste. Trabalho artesanal com técnica apurada e linguagem visual própria, explorando figuras e formas do imaginário nordestino.",img:null},
+  {id:"11855452531",n:"Um Tanto de Arte",l:"Salvador, BA",p:"CERÂMICA/BARRO",s:"AVALIAR",link:null,c:"Marca de cerâmica e objetos decorativos de Salvador com produção artesanal que articula técnica ceramista e identidade cultural do Nordeste. Trabalho com forte apelo visual e acabamento contemporâneo.",img:null},
+  // TECELAGEM/BORDADO
+  {id:"18335186088",n:"Tecê Studio · Macramê",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/p/C1z0DW5vwdp/",c:"Estúdio fortalezense especializado em macramê e artefatos têxteis contemporâneos. Reinterpreta a técnica tradicional do nó em peças decorativas para interiores — painéis, luminárias, cortinas e objetos — com estética atual e forte apelo ao mercado de decoração autoral.",img:"tece-studio-macrame-fortaleza"},
+  {id:"9383373464",n:"Sergio Melo",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"VALIDADO",link:"https://www.instagram.com/serggiomelodesign",c:"Designer e artesão têxtil fortalezense com produção voltada para peças decorativas em fibras naturais e tecelagem artesanal. Trabalho que une rigor técnico e sensibilidade estética, com peças que dialogam com ambientes residenciais e hoteleiros de alto padrão, integrando identidade nordestina e linguagem contemporânea.",img:"sergio-melo-design-textil-fortaleza"},
+  {id:"9383673869",n:"Pana · Redes",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/panatextil/",c:"Marca fortalezense especializada em redes e artefatos têxteis artesanais produzidos com fibras naturais. Trabalha a tradição nordestina da rede como objeto de design, com modelos que transitam entre o uso funcional e a decoração de ambientes, valorizando a técnica manual e os materiais regionais.",img:"pana-textil-redes-fortaleza"},
+  {id:"11799574941",n:"Rendeiras Cariri",l:"Cariri, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/rendeiras_cariri/",c:"Coletivo de rendeiras da região do Cariri cearense, uma das maiores tradições têxteis do Nordeste. Produzem renda bilro e renda agulha com padrões geométricos e florais transmitidos por gerações, usando espinhos de mandacaru como alfinetes. Artesanato de valor patrimonial e alto potencial decorativo.",img:"rendeiras-cariri-ceara"},
+  {id:"11779015630",n:"Celina Hissa",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/celinahissa/",c:"Designer e artesã fortalezense com atuação no campo do design têxtil e da produção artesanal contemporânea. Participante ativa do circuito criativo de Fortaleza, produz peças que articulam técnica têxtil e conceito autoral.",img:"celina-hissa-textil-fortaleza"},
+  {id:"11799629800",n:"Céu de Labirinto",l:"Canoa Quebrada, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/ceudelabirinto/",c:"Projeto artesanal sediado em Canoa Quebrada com produção de peças têxteis e decorativas de inspiração cósmica e artesanal. Incorpora a atmosfera única do litoral cearense em objetos e artefatos com identidade visual marcante.",img:"ceu-de-labirinto-canoa-quebrada"},
+  {id:"11828825413",n:"Casa de Maria",l:"Jaboatão dos Guararapes, PE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/projetocasademaria/",c:"Ateliê têxtil de Jaboatão dos Guararapes com produção de peças bordadas e tecidas com identidade nordestina. Trabalho artesanal que une técnica têxtil tradicional e sensibilidade contemporânea em peças decorativas e funcionais.",img:"casa-de-maria-bordado-jaboatao"},
+  {id:"11829578136",n:"Renda de Filé · Sítio Ipueiras",l:"Jaguaribe, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/renda.de.file.sitio.ipueiras/",c:"Produtores de renda de filé de Jaguaribe, técnica têxtil tradicional que consiste em bordar sobre uma rede base de malha quadrada. Preservam uma das manifestações têxteis mais singulares do Nordeste, com padrões transmitidos por gerações e alto valor patrimonial.",img:"renda-de-file-sitio-ipueiras-jaguaribe"},
+  {id:"11829586196",n:"Artesanato Mãe das Dores",l:"Juazeiro do Norte, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/artesanatomaedasdores/",c:"Coletivo artesanal de Juazeiro do Norte com produção de bordados e tecelagem com identidade do Cariri cearense. Mantém viva a tradição têxtil da região em peças com forte caráter popular e cultural.",img:"artesanato-mae-das-dores-juazeiro"},
+  {id:"11839503628",n:"Tecelartes",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/tecelartes.ce",c:"Ateliê têxtil fortalezense com produção de peças tecidas e bordadas com identidade cearense contemporânea. Articula técnica têxtil e design autoral em peças decorativas para interiores — tapetes, painéis, almofadas — com identidade nordestina e acabamento refinado.",img:"tecelartes-fortaleza"},
+  {id:"11839792783",n:"Arte Fio CE",l:"São Gonçalo do Amarante, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/artfio_ce/",c:"Ateliê de artesanato têxtil de São Gonçalo do Amarante com produção de peças em fibras naturais e bordado com identidade cearense. Trabalho artesanal com forte vínculo territorial, produzindo objetos decorativos que expressam a cultura do litoral e do interior do estado.",img:"arte-fio-ce-sao-goncalo"},
+  {id:"11841436441",n:"Ayla Guadalupe",l:"Recife, PE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/aylaguadalupe/",c:"Artesã e bordadeira de Recife com produção de peças têxteis bordadas com identidade nordestina contemporânea. Trabalho autoral que reinterpreta a tradição do bordado pernambucano, explorando cores vibrantes e padrões com referências da cultura popular.",img:"ayla-guadalupe-bordado-recife"},
+  {id:"11841477121",n:"Ricamo",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/dudaricamo",c:"Ateliê de bordado e artes têxteis fortalezense com produção de peças bordadas com identidade cearense contemporânea. Articula técnica tradicional de bordado e estética atual em peças decorativas — almofadas, quadros, painéis — com forte apelo ao mercado de decoração autoral.",img:"ricamo-bordado-fortaleza"},
+  {id:"11841552395",n:"Ateliê Cardeal",l:"Preá, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/ateliecardeal/",c:"Ateliê de artesanato têxtil do Preá, litoral oeste do Ceará. Une a tradição do artesanato têxtil nordestino com a sensibilidade do litoral cearense, resultando em peças decorativas de alto valor cultural.",img:"atelie-cardeal-prea-ceara"},
+  {id:"11842353599",n:"Meraki Entre Fios",l:"Preá, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/p/DRQVqFvEaFm/",c:"Ateliê têxtil do Preá, litoral oeste do Ceará. Nome de origem grega que significa fazer algo com alma e amor — filosofia expressa em cada peça produzida à mão com fibras naturais e referências da paisagem do litoral cearense.",img:null},
+  {id:"11842405237",n:"Casa Obi",l:"Piauí",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/casa.obi/",c:"Marca piauiense de artesanato têxtil com produção de peças tecidas e bordadas com identidade da cultura do Piauí. Trabalho artesanal com forte vínculo territorial, preservando os saberes e fazeres tradicionais do estado.",img:null},
+  {id:"11842536084",n:"Ser Tão Fort",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/p/DSfdavfjZyO/",c:"Marca fortalezense de artesanato têxtil com identidade do sertão cearense contemporâneo. Produção de peças bordadas e tecidas com referências da cultura nordestina, transitando entre o artesanal e o autoral em objetos decorativos com forte senso de lugar.",img:null},
+  {id:"11842554161",n:"Studio Aho",l:"Fortaleza, CE",p:"TECELAGEM/BORDADO",s:"AVALIAR",link:"https://www.instagram.com/p/DUZPWlfAbIb/",c:"Estúdio criativo fortalezense com produção de objetos e peças têxteis autorais com identidade contemporânea e referências da cultura cearense. Articula design, artesanato e conceito em peças decorativas com acabamento refinado.",img:null},
+  // MADEIRA
+  {id:"18335185582",n:"Mestre Din",l:"Juazeiro do Norte, CE",p:"MADEIRA",s:"VALIDADO",link:"https://www.instagram.com/mestre_din_alves/",c:"Escultor em madeira de Juazeiro do Norte, neto de xilógrafo e referência nacional da arte popular do Cariri. Entalhador desde os 13 anos, desenvolve estilo próprio com figuras atarracadas e expressivas que retratam personagens do reisado, romaria e cotidiano nordestino. Expôs no Carrousel do Louvre em Paris (2025).",img:"mestre-din-escultor-madeira-juazeiro"},
+  {id:"10913814352",n:"Mestre Graciano",l:"Juazeiro do Norte, CE",p:"MADEIRA",s:"VALIDADO",link:null,c:"Mestre entalhador de Juazeiro do Norte com trajetória na arte figurativa do Cariri cearense, filho de Manuel Graciano, reconhecido artista da região. Produz esculturas sem esboço prévio, com técnica manual apurada e forte vínculo com a tradição escultórica do Cariri.",img:"mestre-graciano-escultor-juazeiro"},
+  {id:"18335188111",n:"Nil Morais",l:"Juazeiro do Norte, CE",p:"MADEIRA",s:"VALIDADO",link:"https://www.instagram.com/nilmoraiss/",c:"Escultor em madeira da nova geração de Juazeiro do Norte, com trabalho reconhecido no circuito nacional de arte popular. Integrou a exposição do artista Ai Weiwei em São Paulo (2018), tendo sua peça estampada na capa do catálogo. Retrata personagens como Maria Bonita e Lampião com linguagem própria.",img:"nil-morais-escultor-madeira-juazeiro"},
+  {id:"18335188299",n:"Reflorart",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/reflorart",c:"Ateliê fortalezense de objetos e adornos em madeira com foco em reaproveitamento de materiais e estética orgânica. Trabalho artesanal que explora a textura e a forma natural da madeira em peças decorativas, com abordagem sustentável e identidade visual contemporânea.",img:"reflorart-adornos-madeira-fortaleza"},
+  {id:"18335188418",n:"Pablyto · Esculturas",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/leiviopablyto",c:"Artesão e escultor fortalezense Leivio Pablyto com produção que cruza madeira, metal e mobiliário autoral. Peças escultóricas com forte caráter decorativo e potencial de integração em projetos de interiores de alto padrão.",img:"leivio-pablyto-escultor-fortaleza"},
+  {id:"9383724279",n:"Marcelo Magalhães",l:"São Paulo, SP",p:"MADEIRA",s:"CREDENCIADO",link:"https://www.instagram.com/ateliermarcelomagalhaes/",c:"Designer e marceneiro paulistano reconhecido pelo mobiliário em troncos finos com identidade orgânica e acabamento de alto padrão. Valoriza a forma natural da madeira em peças escultóricas com função de mobiliário — mesas, bancos, suportes. Credenciado como fornecedor da rede.",img:"studio-marcelo-magalhaes-moveis-troncos"},
+  {id:"9383998727",n:"Bruno Camarotti",l:"Fortaleza, CE",p:"MADEIRA",s:"CREDENCIADO",link:"https://www.instagram.com/estudiocamarotti/",c:"Arquiteto e marceneiro cearense, fundador do Estúdio Camarotti. Trabalha com madeira maciça usando encaixes tradicionais sem pregos ou parafusos, técnica aprendida com Morito Ebine, reconhecido entre os 25 melhores marceneiros do mundo. Credenciado como fornecedor da rede.",img:"bruno-camarotti-marceneiro-cearense"},,
+  {id:"9383372566",n:"João Elleri · Luminárias",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/joaoeheliaatelier/",c:"Artesão e designer fortalezense que produz luminárias artesanais a partir de troncos de árvores retirados de podas da prefeitura e restos de obra. Trabalho com forte apelo sustentável, transformando matéria descartada em objetos decorativos de identidade urbana e ambiental.",img:"joao-elleri-luminarias-madeira-fortaleza"},
+  {id:"9383482400",n:"Areka'a · Móveis Rústicos",l:"São Paulo, SP",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/arekaabrasil/",c:"Marca paulistana de mobiliário em madeira rústica com produção de alto padrão. Peças com forte apelo estético e acabamento refinado, explorando a beleza natural da madeira bruta em móveis com identidade contemporânea.",img:"arekaa-moveis-madeira-rustica"},
+  {id:"9383373181",n:"Reflorart · Adornos",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/reflorart",c:"Projeto artesanal fortalezense de adornos decorativos em madeira com abordagem sustentável. Adequado a encomendas pontuais, com acabamento artesanal e identidade regional.",img:"reflorart-adornos-madeira-fortaleza"},
+  {id:"9383741969",n:"Anik · Madeserra",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/madeserra/",c:"Ateliê e loja fortalezense de objetos e mobiliário em madeira. Produção que une madeiraria artesanal e design de produto, com potencial para parcerias em peças decorativas e funcionais.",img:"anik-madeserra-fortaleza"},
+  {id:"9383372413",n:"Estúdio Cruzeta",l:"Florianópolis, SC",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/estudiocruzeta/",c:"Estúdio de design e mobiliário em madeira sediado em Florianópolis com proposta contemporânea e estética de design autoral.",img:"estudio-cruzeta-mobiliario-florianopolis"},
+  {id:"18076306877",n:"Studio Prosa · Gabriel",l:"São Paulo, SP",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/estudioprosa/",c:"Estúdio paulistano de design de mobiliário em madeira com linha autoral e catálogo estruturado. Proposta estética contemporânea com forte cuidado no acabamento e na proporção das peças.",img:"studio-prosa-mobiliario-sao-paulo"},
+  {id:"11799613576",n:"Marcenaria Olinda",l:"Olinda, PE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/marcenariaolinda/",c:"Marcenaria artesanal de Olinda com produção de mobiliário e objetos em madeira com forte vínculo com a cultura e a arquitetura histórica da cidade. Trabalho que une técnica tradicional nordestina e identidade pernambucana.",img:"marcenaria-olinda-pernambuco"},
+  {id:"11828213783",n:"Mauro Ducatti",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/ducatti_mauro/",c:"Artesão e escultor fortalezense com produção em madeira e materiais naturais, explorando formas orgânicas e a estética do Ceará em peças decorativas e funcionais.",img:"mauro-ducatti-escultor-fortaleza"},
+  {id:"11828196543",n:"Nono Artesão",l:"Ilha do Ferro, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/nono_artesao/",c:"Escultor da Ilha do Ferro, pequeno povoado às margens do Rio São Francisco, referência nacional em artesanato de madeira. Produz esculturas de figuras humanas, animais e seres fantásticos a partir de galhos e troncos da caatinga, seguindo a tradição do Mestre Fernando Rodrigues dos Santos.",img:"nono-artesao-ilha-do-ferro"},
+  {id:"11828227827",n:"Boni Oficina de Arte",l:"Juazeiro do Norte, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/boni_oficinadearte/",c:"Ateliê de artesanato em madeira de Juazeiro do Norte com produção de esculturas e objetos decorativos inspirados na cultura popular do Cariri cearense. Mantém viva a tradição escultórica da região, com peças de entalhe manual.",img:"boni-oficina-de-arte-juazeiro"},,
+  {id:"11828255971",n:"Andre Menezes",l:"Recife, PE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/p/C7FkFGOO3WR/",c:"Artesão e escultor de Recife com produção em madeira e materiais naturais, com linguagem autoral que dialoga com a cultura popular pernambucana. Peças decorativas com identidade nordestina e técnica artesanal.",img:"andre-menezes-escultor-recife"},
+  {id:"11828260203",n:"Bitim",l:"Fortaleza, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/p/C9FUERfguBx/",c:"Artesão fortalezense com produção em madeira e materiais naturais, explorando a estética regional cearense em objetos decorativos e funcionais. Trabalho integrado ao circuito criativo de Fortaleza.",img:"bitim-artesao-madeira-fortaleza"},
+  {id:"11828260654",n:"Vavan",l:"Ilha do Ferro, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/artista_vavan/",c:"Artesão da Ilha do Ferro, Alagoas, polo nacional de artesanato em madeira. Produz esculturas com figuras do imaginário popular nordestino — animais, personagens, seres híbridos — a partir de galhos e troncos da caatinga.",img:"vavan-artesao-ilha-do-ferro"},
+  {id:"11828288970",n:"Izy Artes",l:"Uruburetama, CE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/izyartes/",c:"Ateliê de artesanato em madeira sediado em Uruburetama, Ceará, com produção de objetos decorativos e esculturas com identidade regional. Trabalho artesanal que explora as técnicas e o imaginário do interior cearense.",img:"izy-artes-uruburetama-ceara"},
+  {id:"11841683462",n:"Mestre Bezinho",l:"Ibimirim, PE",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/mestre_bezinho/",c:"Mestre entalhador de Ibimirim, Pernambuco, com produção de esculturas em madeira enraizadas na tradição da arte popular do sertão pernambucano. Trabalho de entalhe manual com figuras do imaginário nordestino — animais da caatinga, personagens religiosos, cenas do cotidiano sertanejo.",img:null},
+  {id:"11842455696",n:"Hamsá",l:"São Miguel do Gostoso, RN",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/hamsamarcenaria/",c:"Ateliê de São Miguel do Gostoso, Rio Grande do Norte, com produção de objetos e mobiliário em madeira com identidade do litoral nordestino. Explora a estética orgânica da madeira em peças decorativas e funcionais com forte senso de lugar.",img:null},
+  {id:"11842467423",n:"Boro Sandes",l:"Ilha do Ferro, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/p/C01g-ggAH5S/",c:"Escultor da Ilha do Ferro, Alagoas, polo nacional de artesanato em madeira. Produz esculturas com figuras do imaginário popular nordestino a partir de galhos e troncos da caatinga, com técnica de entalhe manual herdada da tradição do Mestre Fernando Rodrigues dos Santos.",img:null},
+  {id:"11842471147",n:"Adonias",l:"Ilha do Ferro, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/donias2020/",c:"Escultor da Ilha do Ferro, Alagoas, com produção de esculturas em madeira enraizadas na tradição artística do pequeno povoado às margens do São Francisco. Produz figuras do imaginário popular nordestino a partir de galhos e troncos da caatinga.",img:null},
+  {id:"11842489179",n:"Marquinhos Artesão",l:"Ilha do Ferro, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/p/DOOb-f8jvnY/",c:"Escultor da Ilha do Ferro, Alagoas, integrante da comunidade artística polo nacional em esculturas em madeira. Produz peças com figuras do imaginário popular a partir de galhos e troncos da caatinga, com entalhe manual e linguagem visual própria.",img:null},
+  {id:"11842578860",n:"Clemilton Arte",l:"Pão de Açucar, AL",p:"MADEIRA",s:"AVALIAR",link:"https://www.instagram.com/p/DUjuEotEVuz/",c:"Escultor de Pão de Açúcar, Alagoas, município que abriga a Ilha do Ferro, polo nacional de artesanato em madeira. Produz esculturas com figuras do imaginário popular nordestino, com técnica de entalhe manual.",img:null},
+  // TRANÇADO
+  {id:"9383372871",n:"Alumiar Design",l:"Fortaleza, CE",p:"TRANÇADO",s:"VALIDADO",link:"https://www.instagram.com/alumiardesign/",c:"Marca genuinamente cearense de luminárias artesanais fundada em 1998. Produz peças únicas usando fio de algodão, cipó, palito de coqueiro e fibras naturais do Ceará, com estruturas em madeira, arame e ferro. Cada peça é confeccionada à mão, unindo inspiração indígena, folclore brasileiro e estética contemporânea.",img:"alumiar-luminarias-artesanais-fortaleza"},
+  {id:"9383478531",n:"O Galpão · Fibras",l:"Rio de Janeiro, RJ",p:"TRANÇADO",s:"VALIDADO",link:"https://www.instagram.com/ogalpao/",c:"Ateliê carioca de referência nacional em mobiliário e decoração em fibras naturais — palha, ratan, junco e bambu. Produz luminárias, móveis e objetos decorativos com identidade tropical e acabamento de alto padrão, integrando técnica artesanal e design contemporâneo.",img:"o-galpao-fibras-naturais-rio-de-janeiro"},
+  {id:"9383490094",n:"Fibras Artes",l:"Rio de Janeiro, RJ",p:"TRANÇADO",s:"VALIDADO",link:"https://www.instagram.com/arte.fibras/",c:"Fornecedor de mobiliário artesanal em fibras naturais com catálogo estruturado. Produz cadeiras, poltronas, mesas e peças decorativas usando fibras vegetais com acabamento que alia conforto, estética e durabilidade. Linha Garden e linha Natural disponíveis.",img:"fibras-artes-mobiliario-fibras-rio-de-janeiro"},
+  {id:"10947572971",n:"TQN Artesanatos",l:"Fortaleza, CE",p:"TRANÇADO",s:"AVALIAR",link:"https://www.instagram.com/tqnartesanatos/",c:"Ateliê fortalezense de cestos de palha, luminárias e artefatos trançados com matérias-primas regionais. Produção artesanal com identidade nordestina e forte potencial decorativo para ambientes que buscam conexão com a estética do Ceará.",img:"tqn-artesanatos-palha-fortaleza"},
+  {id:"11828874132",n:"Ozi Hand Made",l:"Vitória de Santo Antão, PE",p:"TRANÇADO",s:"AVALIAR",link:null,c:"Ateliê de artesanato trançado de Vitória de Santo Antão, Pernambuco, com produção de cestos, luminárias e objetos decorativos em fibras naturais. Trabalho artesanal com identidade nordestina e forte apelo decorativo.",img:"ozi-hand-made-trancado-pernambuco"},
+  {id:"11829545138",n:"Associação Macaúba",l:"Cariré, CE",p:"TRANÇADO",s:"CREDENCIADO",link:"https://www.instagram.com/mucauba/",c:"Associação artesanal de Cariré, Ceará, com produção coletiva de artefatos trançados em macaúba e outras fibras naturais do sertão cearense. Trabalho com forte vínculo comunitário e territorial, produzindo cestos, balaios e objetos decorativos que preservam técnicas tradicionais de trançado.",img:"associacao-macauba-carire-ceara"},
+  {id:"11839146262",n:"Barraca da Neda",l:"Cajueiro da Praia, PI",p:"TRANÇADO",s:"AVALIAR",link:"https://www.instagram.com/p/CzNB4ATLtP4/",c:"Artesã de Cajueiro da Praia, Piauí, com produção de artefatos trançados em palha de carnaúba e fibras naturais do litoral piauiense. Trabalho artesanal com forte identidade territorial, produzindo peças decorativas e utilitárias que expressam a cultura da costa nordestina.",img:"barraca-da-neda-palha-cajueiro-da-praia"},
+  // IMAGEM
+  {id:"18335186499",n:"Gentil Barreira",l:"Fortaleza, CE",p:"IMAGEM",s:"VALIDADO",link:"https://drive.google.com/drive/folders/1zI4A7qZde-yZTwFMGGoXqUKP0VQj46lG",c:"Fotógrafo cearense autodidata e referência máxima da fotografia documental e autoral do Ceará. Atua desde os anos 1970 no registro de manifestações populares, povos indígenas e paisagens do sertão cearense. Projetos emblemáticos incluem Caminhos do Mar (1979-2010) e Coração Sertão (2013). Acervo na Imagem Brasil Galeria, em Fortaleza.",img:"gentil-barreira-fotografo-ceara"},
+  {id:"18335186582",n:"Chico Albuquerque",l:"Fortaleza, CE",p:"IMAGEM",s:"VALIDADO",link:null,c:"Fotógrafo cearense histórico (1917-2000), figura de referência da fotografia no Ceará ao longo do século XX. Seu acervo analógico, com negativos de até 60 anos de idade, é preservado sob curadoria de Patrícia Veloso na Imagem Brasil Galeria. Registro fundamental da memória visual do Ceará.",img:"chico-albuquerque-fotografo-ceara"},
+  {id:"11445742370",n:"Luiz Carlos Lima",l:"Fortaleza, CE",p:"IMAGEM",s:"AVALIAR",link:"https://www.instagram.com/luizcarloslimaphotography/",c:"Fotógrafo fortalezense com produção autoral voltada para o registro da paisagem, da cultura e das pessoas do Ceará. Trabalho com sensibilidade documental e potencial de aplicação em projetos editoriais, decorativos e institucionais.",img:"luiz-carlos-lima-fotografo-fortaleza"},
+  {id:"11445751544",n:"Celso Oliveira",l:"Fortaleza, CE",p:"IMAGEM",s:"AVALIAR",link:"https://www.instagram.com/celsoliiveira/",c:"Fotógrafo fortalezense com produção visual focada em retratos e registros do cotidiano e da cultura do Ceará. Trabalho a ser avaliado quanto ao estilo e à possibilidade de parceria para produção de imagens com identidade nordestina.",img:"celso-oliveira-fotografo-fortaleza"},
+  {id:"11839541908",n:"Silva Berros",l:"Quixadá, CE",p:"IMAGEM",s:"AVALIAR",link:"https://www.instagram.com/silvaberros/",c:"Fotógrafo e artista visual de Quixadá, Ceará, com produção focada na paisagem e na cultura do sertão cearense. Captura a luz, as pedras e o cotidiano do interior do Ceará em imagens com forte identidade territorial.",img:"silva-berros-fotografo-quixada"},
+  {id:"11842509720",n:"Jota Melo",l:"Fortaleza, CE",p:"IMAGEM",s:"AVALIAR",link:"https://www.instagram.com/ojotapeg/",c:"Fotógrafo e artista visual fortalezense com produção focada na cultura, na paisagem e nas pessoas do Ceará. Trabalho com sensibilidade documental e artística que captura a identidade cearense em imagens com potencial para projetos editoriais, decorativos e institucionais.",img:null},
+  // PALAVRA
+  {id:"18335186905",n:"Patricia Veloso",l:"Fortaleza, CE",p:"PALAVRA",s:"VALIDADO",link:"https://www.instagram.com/velosopatricia60/",c:"Curadora e gestora cultural fortalezense, referência no circuito literário e artístico do Ceará. Guarda e gerencia acervos fotográficos históricos do Ceará, incluindo obras de Gentil Barreira e Chico Albuquerque, com papel fundamental na preservação da memória visual cearense.",img:"patricia-veloso-curadora-fortaleza"},
+  {id:"18335187456",n:"Socorro Accioly",l:"Fortaleza, CE",p:"PALAVRA",s:"VALIDADO",link:"https://www.instagram.com/socorroacioli/",c:"Escritora e poeta cearense com obra voltada para a literatura infantil e a poesia com raízes nordestinas. Presença consolidada no circuito literário do Ceará, com publicações que articulam identidade cultural e linguagem poética acessível.",img:"socorro-accioly-escritora-fortaleza"},
+  {id:"18335187555",n:"Câmara Cearense do Livro",l:"Fortaleza, CE",p:"PALAVRA",s:"AVALIAR",link:null,c:"Entidade fortalezense de fomento ao livro e à leitura no Ceará, responsável por articular autores, editores e o mercado editorial do estado. Interlocutora importante para projetos que envolvam literatura, cultura escrita e identidade cearense.",img:null},
+  {id:"18335188204",n:"Gabriela Araújo",l:"Preá, CE",p:"PALAVRA",s:"VALIDADO",link:"https://www.instagram.com/cardealbordados",c:"Artesã e bordadeira do Preá, no litoral oeste do Ceará, com produção de bordados autorais com forte identidade do território. Une a tradição do bordado nordestino com a sensibilidade do litoral cearense, resultando em peças decorativas de alta identidade cultural.",img:"gabriela-araujo-bordados-prea"},
+  {id:"11841566336",n:"José Lourenço · Lira Nordestina",l:"Juazeiro do Norte, CE",p:"PALAVRA",s:"CREDENCIADO",link:"https://www.instagram.com/p/DO7UrpRDrNS/",c:"Poeta e cordelista de Juazeiro do Norte, guardião da tradição da literatura de cordel do Cariri cearense. Produz folhetos com xilogravuras e versos que retratam o imaginário popular nordestino — santos, heróis, paisagens e causos do sertão. Alto potencial de aplicação em projetos editoriais e decorativos.",img:"jose-lourenco-lira-cordel-juazeiro"},
+  {id:"11841636209",n:"Francoli",l:"Juazeiro do Norte, CE",p:"PALAVRA",s:"AVALIAR",link:"https://www.instagram.com/mestre_francorli/",c:"Poeta e artista da palavra de Juazeiro do Norte com produção enraizada na literatura popular do Cariri cearense. Trabalho que dialoga com a tradição oral e escrita do Nordeste — cordel, repente, poesia de bancada — em versos que retratam o imaginário cultural, religioso e cotidiano da região.",img:null},
+  // PINTURA
+  {id:"18335188873",n:"Almeida Luz",l:"Fortaleza, CE",p:"PINTURA",s:"VALIDADO",link:"https://www.instagram.com/almeidadeluz/",c:"Artista urbano cearense com mais de 20 anos de carreira. Transita entre ilustração, quadrinhos, fotografia e grafite, com técnica em spray que resulta em traço inconfundível. Pintou murais em diversas cidades do Brasil e do exterior. Vencedor do I Concurso Paz no Caos em Fortaleza (2017). Referência na arte urbana contemporânea do Nordeste.",img:"almeida-luz-arte-urbana-fortaleza"},
+  {id:"10986965677",n:"Bete Paes · Arte em Tecido",l:"Recife, PE",p:"PINTURA",s:"VALIDADO",link:"https://www.instagram.com/betepaes",c:"Artista pernambucana especializada em pintura sobre tecido, com produção que une técnica pictórica e suporte têxtil em peças decorativas de identidade nordestina. Trabalho com forte apelo visual e potencial de integração em ambientes residenciais e hoteleiros.",img:"bete-paes-pintura-em-tecido-recife"},
+  {id:"11841485037",n:"Drawxi",l:"Fortaleza, CE",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/p/DFJXOQIvM0I/",c:"Artista visual fortalezense com produção de pintura e ilustração com identidade contemporânea e referências da cultura cearense. Trabalho autoral com traço próprio, transitando entre suportes tradicionais e digitais.",img:"drawxi-artista-visual-fortaleza"},
+  {id:"11841513817",n:"Filho de Mercúrio",l:"Recife, PE",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/filhodemercurio/",c:"Artista visual de Recife com produção de pintura e arte contemporânea com identidade pernambucana. Trabalho autoral que dialoga com a cena artística do Nordeste.",img:"filho-de-mercurio-pintura-recife"},
+  {id:"11841520307",n:"Gabriela Rodrigues",l:"Fortaleza, CE",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/p/DKfEpIGugGt/",c:"Artista visual e pintora fortalezense com produção autoral de pintura com referências da cultura e da paisagem cearense. Trabalho com linguagem contemporânea e identidade local.",img:"gabriela-rodrigues-pintora-fortaleza"},
+  {id:"11841546780",n:"Gabriel Arte",l:"Caicó, RN",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/biel.artlife/",c:"Artista visual de Caicó, Rio Grande do Norte, com produção de pintura e arte visual com identidade do sertão nordestino. Trabalho autoral que explora as referências culturais e paisagísticas do interior do Nordeste.",img:"gabriel-arte-pintura-caico"},
+  {id:"11841527302",n:"Lu Artes",l:"Fortaleza, CE",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/_luartes_/",c:"Artista visual e pintora fortalezense com produção autoral de pintura decorativa com identidade cearense. Trabalho com linguagem acessível e colorida, produzindo obras que dialogam com a cultura e a paisagem do Ceará.",img:"lu-artes-pintora-fortaleza"},
+  {id:"11841554843",n:"Olga Maria",l:"Fortaleza, CE",p:"PINTURA",s:"VALIDADO",link:"https://www.instagram.com/p/C2f0fbXuqOe/",c:"Artista visual e pintora fortalezense com produção de pintura autoral com referências da cultura nordestina e da paisagem cearense. Trabalho com identidade regional e linguagem contemporânea.",img:"olga-maria-pintora-fortaleza"},
+  {id:"11841574967",n:"Franklin Stein",l:"Fortaleza, CE",p:"PINTURA",s:"AVALIAR",link:"https://www.fkstein.art/",c:"Artista visual e pintor fortalezense com produção autoral que dialoga com a cena de arte contemporânea do Ceará. Trabalho com linguagem visual própria, explorando referências culturais cearenses.",img:"franklin-stein-artista-fortaleza"},
+  {id:"11842535525",n:"Isabella Siqueira",l:"Jambeiro, SP",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/isabella.siqueira_/",c:"Artista visual e pintora de Jambeiro, São Paulo, com produção autoral de pintura que dialoga com referências da natureza e da cultura brasileira. Trabalho com linguagem visual contemporânea e identidade própria.",img:null},
+  {id:"11841599134",n:"Arthur Grangeia",l:"São Paulo, SP",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/p/DQnNfoqibpk/",c:"Artista visual e pintor paulistano com produção autoral de pintura contemporânea. Trabalho com linguagem visual própria e presença crescente no mercado de arte brasileiro.",img:"arthur-grangeia-pintura-sao-paulo"},
+  {id:"11842605700",n:"Ju Choo",l:"Fortaleza, CE",p:"PINTURA",s:"AVALIAR",link:"https://www.instagram.com/ju.chooo/",c:"Artista visual e pintora fortalezense com produção autoral de pintura e arte decorativa com referências da cultura cearense. Trabalho com linguagem visual própria e colorida.",img:null},
+  // LÚDICOS
+  {id:"11828251758",n:"Patricia Barros Design",l:"Jaboatão dos Guararapes, PE",p:"LÚDICOS",s:"AVALIAR",link:"https://www.instagram.com/patriciabarrosdesign/",c:"Designer de Jaboatão dos Guararapes com produção de objetos lúdicos e decorativos com forte identidade visual. Trabalho autoral que transita entre o design de produto e o artesanato, com peças coloridas e cheias de personalidade com referências da cultura nordestina.",img:"patricia-barros-design-ludicos-jaboatao"},
+  {id:"11840019105",n:"Ateliê Casa de Papel",l:"Fortaleza, CE",p:"LÚDICOS",s:"AVALIAR",link:"https://www.instagram.com/atelieacasadepapelbyvanderlei9/",c:"Ateliê fortalezense de objetos lúdicos e decorativos em papel e materiais alternativos, com produção autoral de caráter artesanal e criativo. Explora a versatilidade do papel em peças escultóricas, decorativas e funcionais.",img:"atelie-casa-de-papel-fortaleza"},
+  {id:"11840058136",n:"Demostenes Fidelis",l:"Juazeiro do Norte, CE",p:"LÚDICOS",s:"AVALIAR",link:"https://www.instagram.com/demostenesfidelis/",c:"Artista e artesão de Juazeiro do Norte com produção de objetos lúdicos e decorativos com identidade da cultura popular do Cariri cearense. Explora o imaginário festivo e popular da região em peças com caráter lúdico, colorido e forte apelo à identidade cultural nordestina.",img:"demostenes-fidelis-ludicos-juazeiro"},
+  // ILUMINAÇÃO
+  {id:"11827911897",n:"Lumluz · Cris Lomonaco",l:"Recife, PE",p:"ILUMINAÇÃO",s:"AVALIAR",link:"https://www.instagram.com/lumluz",c:"Estúdio pernambucano de luminárias artesanais fundado por Cris Lomonaco, com produção de peças que exploram fibras naturais, palha e materiais da cultura popular nordestina. Trabalho com identidade regional e acabamento contemporâneo, voltado para ambientes residenciais e hoteleiros.",img:"lumluz-luminarias-recife"},
+  // COURO
+  {id:"11839924992",n:"Andre Rocha Cardoso",l:"Cariri, CE",p:"COURO",s:"AVALIAR",link:"https://rotasceart.sps.ce.gov.br/andre-rocha-cardoso/",c:"Artesão coureiro do Cariri cearense com produção de objetos e adornos em couro com identidade sertaneja. Mantém viva a tradição da courearia nordestina em peças com técnica artesanal apurada — bolsas, cintos, adornos decorativos e funcionais.",img:"andre-rocha-cardoso-couro-cariri"},
+  // JOIAS
+  {id:"11831291721",n:"Antonio Rabelo",l:"Quixeramubim, CE",p:"JOIAS",s:"AVALIAR",link:"https://www.instagram.com/antoniorabelo_ce/",c:"Joalheiro e artesão de Quixeramubim, Ceará, com produção de joias e adornos que incorporam materiais e referências da cultura cearense. Trabalho autoral combinando metais, pedras e elementos naturais da região com linguagem contemporânea.",img:"antonio-rabelo-joalheiro-quixeramubim"},
+  {id:"11839320221",n:"Azulerde",l:"Recife, PE",p:"JOIAS",s:"AVALIAR",link:"https://www.instagram.com/azulerde/",c:"Marca de joias e adornos de Recife com produção que explora materiais naturais do Nordeste — sementes, fibras, pedras e metais — em peças com identidade biofílica e contemporânea. Trabalho autoral com forte apelo ao mercado de acessórios com identidade regional.",img:"azulerde-joias-recife"},
+  // DECORAÇÃO
+  {id:"11839265638",n:"Mavinie",l:"Pedra Branca, CE",p:"DECORAÇÃO",s:"CREDENCIADO",link:null,c:"Marca de decoração de Pedra Branca, Ceará, com produção de objetos decorativos artesanais com identidade do interior cearense. Trabalho que explora materiais e referências culturais do sertão em peças com apelo contemporâneo.",img:"mavinie-decoracao-pedra-branca"},
+  // VIDRO
+  {id:"11841631255",n:"Junior Porto",l:"Fortaleza, CE",p:"VIDRO",s:"VALIDADO",link:"https://www.instagram.com/juniorporto55/",c:"Artista e designer fortalezense com produção em vidro artístico, explorando a transparência, a cor e a luz em peças decorativas autorais. Técnica singular no cenário artesanal cearense, produzindo objetos com identidade contemporânea.",img:null},
+  // DIVERSOS
+  {id:"10946355765",n:"Ateliê MMassuci",l:"São Paulo, SP",p:"DIVERSOS",s:"VALIDADO",link:"https://www.instagram.com/ateliemmassuci/",c:"Artesã paulistana com produção multimaterial que combina cerâmica, macramê de juta, corda de sisal e malha de aço em luminárias, vasos e objetos decorativos. Trabalho de alta sofisticação técnica que une materiais inusitados em peças de forte identidade contemporânea.",img:"atelie-mmassuci-ceramica-macrame-sao-paulo"},
+  {id:"11799187767",n:"Zepa Arte",l:"Recife, PE",p:"DIVERSOS",s:"VALIDADO",link:"https://www.instagram.com/zepa.arte/",c:"Artista pernambucana com produção de objetos decorativos que articulam diferentes técnicas e materiais com forte identidade nordestina. Trabalho autoral com presença crescente no mercado de design e artesanato do Nordeste.",img:"zepa-arte-recife"},
+  // MESTRE DA CULTURA
+  {id:"11841674455",n:"Chico Emília",l:"Quixadá, CE",p:"MESTRE DA CULTURA",s:"AVALIAR",link:"https://www.instagram.com/chico_emilia/",c:"Mestre da Cultura de Quixadá, Ceará, reconhecido pelo governo estadual como guardião de saberes e fazeres tradicionais do interior cearense. Trabalho enraizado na cultura popular da região do sertão, preservando expressões artísticas e artesanais de valor patrimonial imaterial.",img:null},
 ];
-const PC={'CERÂMICA/BARRO':'#D4733A','TECELAGEM/BORDADO':'#B84060','MADEIRA':'#8C6040','TRANÇADO':'#C4993A','IMAGEM':'#7060B0','PALAVRA':'#607890','PINTURA':'#B84060','DECORAÇÃO':'#4080A0','ILUMINAÇÃO':'#A89060','JOIAS':'#806080','COURO':'#A07050','VIDRO':'#80B840','LÚDICOS':'#B040A0','DIVERSOS':'#888','MESTRE DA CULTURA':'#C4903A'};
-const SI={'CREDENCIADO':{cls:'b-cred',clsM:'bm-cred',t:'Credenciado'},'VALIDADO':{cls:'b-vali',clsM:'bm-vali',t:'Validado'},'AVALIAR':{cls:'b-aval',clsM:'bm-aval',t:'Em avaliação'}};
-let pilarOn='TODOS',bQ='';
-const pilares=[...new Set(A.map(a=>a.p).filter(Boolean))].sort();
-function norm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9s]/g,' ');}
-function filtrado(){let r=A;if(pilarOn!=='TODOS')r=r.filter(a=>a.p===pilarOn);if(bQ){const q=norm(bQ);r=r.filter(a=>norm(a.n).includes(q)||norm(a.l).includes(q)||norm(a.p||'').includes(q));}return r;}
-function handle(link){if(!link||!link.includes('instagram.com'))return null;const m=link.match(/instagram.com/([^/?#p][^/?#]*)/);return m?'@'+m[1].replace(//$/,''):null;}
-function renderGrade(){
-  const grade=document.getElementById('grade');
-  const lista=filtrado();
-  document.getElementById('navTotal').textContent=lista.length+' artesãos';
-  document.getElementById('catLabel').textContent=pilarOn==='TODOS'?'todos os artesãos — '+lista.length:pilarOn.toLowerCase()+' — '+lista.length+' artesãos';
-  if(!lista.length){grade.innerHTML='<div class="vazio">Nenhum resultado.</div>';return;}
-  grade.innerHTML=lista.map((a,i)=>{
-    const c=PC[a.p]||'#888';
-    const si=SI[a.s]||SI['AVALIAR'];
-    const fotoUrl=a.fotos&&a.fotos.length>0?a.fotos[0].url:null;
-    const fotoHtml=fotoUrl?'<div class="card-foto" style="background-image:url('+fotoUrl+')"></div><div class="card-foto-grad"></div>':'';
-    return '<div class="card" onclick="abrirModalById(''+a.id+'')">'
-      +'<div class="card-fio" style="background:'+c+'"></div>'
-      +'<span style="position:absolute;top:16px;right:18px;font-family:var(--mono);font-size:10px;color:rgba(242,232,213,.2)">'+String(i+1).padStart(2,'0')+'</span>'
-      +'<div class="card-visual">'+fotoHtml+'<span class="card-letra">'+a.n.charAt(0)+'</span>'
-      +'<span class="card-pilar-label" style="color:'+c+';position:relative;z-index:2;padding-top:6px">'+a.p+'</span>'
-      +'</div>'
-      +'<div class="card-corpo"><div class="card-nome">'+a.n+'</div><div class="card-local">'+a.l+'</div>'
-      +'<div class="card-rodape"><span class="badge '+si.cls+'">'+si.t+'</span><span class="card-arrow">→</span></div>'
-      +'</div></div>';
-  }).join('');
+
+/* ══ Cores dos pilares ══ */
+const PC = {
+  "CERÂMICA/BARRO":    "#D4733A",
+  "TECELAGEM/BORDADO": "#B84060",
+  "MADEIRA":           "#8C6040",
+  "TRANÇADO":          "#C4993A",
+  "IMAGEM":            "#7060B0",
+  "PALAVRA":           "#607890",
+  "PINTURA":           "#B84060",
+  "DEVOÇÃO":           "#4090B0",
+  "LÚDICOS":           "#B040A0",
+  "ILUMINAÇÃO":        "#A89060",
+  "AMENITIES":         "#3050A0",
+  "COURO":             "#A07050",
+  "JOIAS":             "#808080",
+  "DECORAÇÃO":         "#4080A0",
+  "VIDRO":             "#70A030",
+  "DIVERSOS":          "#888888",
+  "MESTRE DA CULTURA": "#1880B0",
+};
+
+const SI = {
+  "CREDENCIADO": {cls:"b-cred",clsM:"bm-cred",t:"Credenciado"},
+  "VALIDADO":    {cls:"b-vali",clsM:"bm-vali",t:"Validado"},
+  "AVALIAR":     {cls:"b-aval",clsM:"bm-aval",t:"Em avaliação"},
+  "NÃO ATENDE":  {cls:"b-naoa",clsM:"bm-naoa",t:"Não atende"},
+};
+
+let pilarOn = "TODOS", bQ = "";
+const pilares = [...new Set(A.map(a=>a.p).filter(Boolean))].sort();
+
+function normalizar(str) {
+  return str.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ");
 }
-function abrirModalById(id){const a=A.find(x=>x.id===id);if(a)abrirModal(a);}
-function renderPilares(){
-  const lista=document.getElementById('pilaresLista');
-  const btnT=document.createElement('button');btnT.className='pilar-btn on';btnT.dataset.pilar='TODOS';
-  btnT.innerHTML='TODOS<span class="pilar-btn-n">'+A.length+'</span>';
-  btnT.addEventListener('click',()=>setPilar('TODOS'));lista.appendChild(btnT);
+
+function filtrado() {
+  let r = A;
+  if (pilarOn!=="TODOS") r=r.filter(a=>a.p===pilarOn);
+  if (bQ) {
+    const q = normalizar(bQ);
+    r = r.filter(a =>
+      normalizar(a.n).includes(q) ||
+      normalizar(a.l).includes(q) ||
+      normalizar(a.p||"").includes(q)
+    );
+  }
+  return r;
+}
+
+function handle(link) {
+  if (!link||!link.includes("instagram.com")) return null;
+  const m=link.match(/instagram\.com\/([^/?#p][^/?#]*)/);
+  return m?"@"+m[1].replace(/\/$/,""):null;
+}
+
+/* Render grade */
+function renderGrade() {
+  const grade = document.getElementById("grade");
+  const lista = filtrado();
+  document.getElementById("navTotal").textContent = lista.length+" artesãos";
+  document.getElementById("catLabel").textContent =
+    pilarOn==="TODOS" ? "todos os artesãos" : pilarOn.toLowerCase() + " — "+lista.length+" artesãos";
+
+  if (!lista.length) {
+    grade.innerHTML=`<div class="vazio">Nenhum artesão para esse filtro.</div>`;
+    return;
+  }
+
+  grade.innerHTML = lista.map((a,i)=>{
+    const c = PC[a.p]||"#888";
+    const si = SI[a.s]||SI["AVALIAR"];
+    const slug = a.img || toSlug(a.n);
+    const capaUrl = a.img ? `imagens/${a.img}/1.jpg` : null;
+    const fotoHtml = capaUrl
+      ? `<div class="card-foto" style="background-image:url(${capaUrl})"></div><div class="card-foto-gradiente"></div>`
+      : '';
+    return `<div class="card" onclick="abrirModalById('${a.id}')">
+      <div class="card-fio" style="background:${c}"></div>
+      <span class="card-index">${String(i+1).padStart(2,"0")}</span>
+      <div class="card-visual">
+        ${fotoHtml}
+        <span class="card-letra">${a.n.charAt(0)}</span>
+        <span class="card-pilar-label" style="color:${c};border-color:${c}40">${a.p}</span>
+      </div>
+      <div class="card-corpo">
+        <div class="card-nome">${a.n}</div>
+        <div class="card-local">${a.l}</div>
+        <div class="card-rodape">
+          <span class="badge ${si.cls}">${si.t}</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* Função global para onclick inline */
+function abrirModalById(id) {
+  const a = A.find(x => String(x.id) === String(id));
+  if (a) abrirModal(a);
+}
+
+/* Render pilares */
+function renderPilares() {
+  const lista = document.getElementById("pilaresLista");
+  // Todos primeiro
+  const btnT = document.createElement("button");
+  btnT.className="pilar-btn on"; btnT.dataset.pilar="TODOS";
+  btnT.innerHTML=`TODOS<span class="pilar-btn-n">${A.length}</span>`;
+  btnT.addEventListener("click",()=>setPilar("TODOS"));
+  lista.appendChild(btnT);
+
   pilares.forEach(p=>{
-    const n=A.filter(a=>a.p===p).length;
-    const btn=document.createElement('button');btn.className='pilar-btn';btn.dataset.pilar=p;
-    btn.innerHTML=p+'<span class="pilar-btn-n">'+n+'</span>';
-    btn.addEventListener('click',()=>{setPilar(p);document.getElementById('grade').scrollIntoView({behavior:'smooth',block:'start'});});lista.appendChild(btn);
-    const pill=document.createElement('button');pill.className='npill';pill.dataset.pilar=p;pill.textContent=p;
-    pill.addEventListener('click',()=>setPilar(p));document.getElementById('navPills').appendChild(pill);
+    const n = A.filter(a=>a.p===p).length;
+    const btn = document.createElement("button");
+    btn.className="pilar-btn"; btn.dataset.pilar=p;
+    btn.innerHTML=`${p}<span class="pilar-btn-n">${n}</span>`;
+    btn.addEventListener("click",()=>{ setPilar(p); document.getElementById("grade").scrollIntoView({behavior:"smooth",block:"start"}); });
+    lista.appendChild(btn);
   });
 }
-function setPilar(p){pilarOn=p;document.querySelectorAll('.pilar-btn,.npill').forEach(b=>b.classList.toggle('on',b.dataset.pilar===p));renderGrade();}
-let cSlide=0,cTotal=0;
-function moverCarrossel(pos){if(pos<0||pos>=cTotal)return;cSlide=pos;document.getElementById('mFaixa').style.transform='translateX(-'+pos*100+'%)';document.querySelectorAll('.carrossel-ponto').forEach((p,i)=>p.classList.toggle('on',i===pos));document.getElementById('cPrev').classList.toggle('oculta',pos===0);document.getElementById('cNext').classList.toggle('oculta',pos===cTotal-1);if(cTotal>1)document.getElementById('cCounter').textContent=(pos+1)+' / '+cTotal;}
-function abrirModal(art){
-  const c=PC[art.p]||'#888';
-  const si=SI[art.s]||SI['AVALIAR'];
-  const h=handle(art.link);
-  document.getElementById('mFio').style.background=c;
-  const faixa=document.getElementById('mFaixa');
-  const pontos=document.getElementById('cPontos');
-  const counter=document.getElementById('cCounter');
-  faixa.innerHTML='';pontos.innerHTML='';counter.textContent='';cSlide=0;
-  const fotos=(art.fotos||[]).map(f=>f.url);
-  cTotal=fotos.length||1;
-  if(!fotos.length){
-    const pl=document.createElement('div');pl.className='carrossel-placeholder';pl.style.background='#3A2010';
-    pl.innerHTML='<span class="modal-visual-letra">'+art.n.charAt(0)+'</span>';faixa.appendChild(pl);
-  }else{
-    fotos.forEach((url,i)=>{
-      const slide=document.createElement('div');slide.className='carrossel-slide';slide.style.backgroundImage='url('+url+')';faixa.appendChild(slide);
-      if(fotos.length>1){const ponto=document.createElement('button');ponto.className='carrossel-ponto'+(i===0?' on':'');ponto.addEventListener('click',()=>moverCarrossel(i));pontos.appendChild(ponto);}
-    });
-    if(fotos.length>1)counter.textContent='1 / '+fotos.length;
-  }
-  document.getElementById('cPrev').classList.toggle('oculta',cTotal<=1);
-  document.getElementById('cNext').classList.toggle('oculta',cTotal<=1);
-  faixa.style.transform='translateX(0%)';
-  document.getElementById('mNome').textContent=art.n;
-  document.getElementById('mLocal').textContent=art.l;
-  const mS=document.getElementById('mStatus');mS.textContent=si.t;mS.className='badge-m '+si.clsM;
-  const mP=document.getElementById('mPilar');mP.textContent=art.p;
-  mP.style.cssText='color:'+c+';border-color:'+c+'50;background:'+c+'10;font-family:var(--mono);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border:1px solid;';
-  document.getElementById('mInfo').innerHTML='<div class="modal-info-item"><div class="modal-info-label">Localização</div><div class="modal-info-val">'+art.l+'</div></div><div class="modal-info-item"><div class="modal-info-label">Pilar</div><div class="modal-info-val">'+art.p+'</div></div><div class="modal-info-item"><div class="modal-info-label">Status</div><div class="modal-info-val">'+si.t+'</div></div>';
-  document.getElementById('mConceito').textContent=art.c||'Integrante do banco curatorial Nordeste Autoral · Desconexo Design.';
-  const ac=document.getElementById('mAcoes');ac.innerHTML='';
-  if(art.link){const a=document.createElement('a');a.href=art.link;a.target='_blank';a.rel='noopener';a.className='btn-modal btn-modal-p';a.innerHTML=(h||'Acessar perfil');ac.appendChild(a);}
-  document.getElementById('overlay').classList.add('on');document.body.style.overflow='hidden';
+
+function setPilar(p) {
+  pilarOn=p;
+  document.querySelectorAll(".pilar-btn").forEach(b=>b.classList.toggle("on",b.dataset.pilar===p));
+  renderGrade();
 }
-function fecharModal(){document.getElementById('overlay').classList.remove('on');document.body.style.overflow='';}
-document.getElementById('btnFechar').addEventListener('click',fecharModal);
-document.getElementById('overlay').addEventListener('click',e=>{if(e.target===document.getElementById('overlay'))fecharModal();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')fecharModal();if(e.key==='ArrowLeft')moverCarrossel(cSlide-1);if(e.key==='ArrowRight')moverCarrossel(cSlide+1);});
-document.getElementById('cPrev').addEventListener('click',()=>moverCarrossel(cSlide-1));
-document.getElementById('cNext').addEventListener('click',()=>moverCarrossel(cSlide+1));
-document.getElementById('busca').addEventListener('input',e=>{bQ=e.target.value;renderGrade();});
-document.getElementById('btnReset').addEventListener('click',()=>setPilar('TODOS'));
-document.querySelector('.npill[data-pilar="TODOS"]').addEventListener('click',()=>setPilar('TODOS'));
+
+/* Stats */
+function renderStats() {
+  document.getElementById("stTotal").textContent=A.length;
+  document.getElementById("stCred").textContent=A.filter(a=>a.s==="CREDENCIADO").length;
+  document.getElementById("stPil").textContent=pilares.length;
+}
+
+/* ══ SLUG — converte nome em pasta ══ */
+function toSlug(nome) {
+  return nome
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"") // remove acentos
+    .replace(/[·•]/g,"-")                             // substitui pontos especiais
+    .replace(/[^a-z0-9\s-]/g,"")                      // remove resto
+    .trim().replace(/\s+/g,"-")                        // espaços viram hífen
+    .replace(/-+/g,"-");                               // limpa hífens duplos
+}
+
+/* ══ CARROSSEL — estado ══ */
+let cSlide = 0;
+let cTotal = 0;
+
+function moverCarrossel(pos) {
+  if (pos < 0 || pos >= cTotal) return;
+  cSlide = pos;
+  document.getElementById("mFaixa").style.transform = `translateX(-${pos * 100}%)`;
+  // Pontos
+  document.querySelectorAll(".carrossel-ponto").forEach((p,i)=>p.classList.toggle("on",i===pos));
+  // Setas
+  document.getElementById("cPrev").classList.toggle("oculta", pos===0);
+  document.getElementById("cNext").classList.toggle("oculta", pos===cTotal-1);
+  // Contador
+  if (cTotal > 1) document.getElementById("cCounter").textContent = `${pos+1} / ${cTotal}`;
+}
+
+/* ══ MODAL ══ */
+function abrirModal(art) {
+  const c   = PC[art.p]||"#888";
+  const si  = SI[art.s]||SI["AVALIAR"];
+  const h   = handle(art.link);
+  const slug = art.img || toSlug(art.n);
+
+  document.getElementById("mFio").style.background = c;
+
+  // Monta o carrossel: tenta 3 fotos + fallback placeholder
+  const faixa   = document.getElementById("mFaixa");
+  const pontos  = document.getElementById("cPontos");
+  const counter = document.getElementById("cCounter");
+  faixa.innerHTML  = "";
+  pontos.innerHTML = "";
+  counter.textContent = "";
+  cSlide = 0;
+
+  // Cria os slides (1.jpg, 2.jpg, 3.jpg) — cada um valida se a imagem existe
+  const totalFotos = 3;
+  const slidesValidos = [];
+
+  function montarCarrosselComFotos(fotosEncontradas) {
+    cTotal = fotosEncontradas.length || 1;
+    faixa.innerHTML = "";
+    pontos.innerHTML = "";
+
+    if (fotosEncontradas.length === 0) {
+      // Nenhuma foto — mostra placeholder tipográfico
+      const pl = document.createElement("div");
+      pl.className = "carrossel-placeholder";
+      pl.style.background = "#3A2010";
+      pl.innerHTML = `<span class="modal-visual-letra">${art.n.charAt(0)}</span>`;
+      faixa.appendChild(pl);
+      counter.textContent = "";
+    } else {
+      fotosEncontradas.forEach((url,i)=>{
+        const slide = document.createElement("div");
+        slide.className = "carrossel-slide";
+        slide.style.backgroundImage = `url(${url})`;
+        faixa.appendChild(slide);
+
+        if (fotosEncontradas.length > 1) {
+          const ponto = document.createElement("button");
+          ponto.className = "carrossel-ponto" + (i===0?" on":"");
+          ponto.addEventListener("click", ()=>moverCarrossel(i));
+          pontos.appendChild(ponto);
+        }
+      });
+      if (fotosEncontradas.length > 1) {
+        counter.textContent = `1 / ${fotosEncontradas.length}`;
+      }
+    }
+
+    // Setas
+    document.getElementById("cPrev").classList.toggle("oculta", cTotal<=1);
+    document.getElementById("cNext").classList.toggle("oculta", cTotal<=1 || cSlide===cTotal-1);
+    faixa.style.transform = "translateX(0%)";
+  }
+
+  // Verifica quais fotos existem via Image()
+  let verificadas = 0;
+  const encontradas = [];
+  for (let i=1; i<=totalFotos; i++) {
+    const url = `imagens/${slug}/${i}.jpg`;
+    const img = new Image();
+    img.onload  = ()=>{ encontradas.push({i, url}); verificar(); };
+    img.onerror = ()=>{ verificar(); };
+    img.src = url;
+    function verificar() {
+      verificadas++;
+      if (verificadas===totalFotos) {
+        encontradas.sort((a,b)=>a.i-b.i);
+        montarCarrosselComFotos(encontradas.map(e=>e.url));
+      }
+    }
+  }
+
+  // Dados textuais
+  document.getElementById("mNome").textContent  = art.n;
+  document.getElementById("mLocal").textContent = art.l;
+
+  const mS = document.getElementById("mStatus");
+  mS.textContent = si.t; mS.className = "badge-m "+si.clsM;
+
+  const mP = document.getElementById("mPilar");
+  mP.textContent = art.p;
+  mP.style.cssText = `color:${c};border-color:${c}50;background:${c}10;font-family:var(--mono);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border:1px solid;`;
+
+  document.getElementById("mConceito").textContent =
+    art.c || "Integrante do banco curatorial Nordeste Autoral · Desconexo Design. Indicação baseada em critérios de autoria, identidade cultural e capacidade de atendimento. A relação comercial é realizada diretamente entre cliente e artesão — não há intermediação pela Desconexo.";
+
+  const ac = document.getElementById("mAcoes"); ac.innerHTML = "";
+  if (art.link) {
+    const a = document.createElement("a");
+    a.href=art.link; a.target="_blank"; a.rel="noopener";
+    a.className="btn-modal btn-modal-p";
+    a.innerHTML=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>${h||"Acessar perfil"}`;
+    ac.appendChild(a);
+  }
+
+  document.getElementById("overlay").classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+
+function fecharModal() {
+  document.getElementById("overlay").classList.remove("on");
+  document.body.style.overflow="";
+}
+
+/* Eventos */
+document.getElementById("btnFechar").addEventListener("click",fecharModal);
+document.getElementById("overlay").addEventListener("click",e=>{ if(e.target===document.getElementById("overlay")) fecharModal(); });
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape") fecharModal();
+  if(e.key==="ArrowLeft")  moverCarrossel(cSlide-1);
+  if(e.key==="ArrowRight") moverCarrossel(cSlide+1);
+});
+document.getElementById("cPrev").addEventListener("click",()=>moverCarrossel(cSlide-1));
+document.getElementById("cNext").addEventListener("click",()=>moverCarrossel(cSlide+1));
+document.getElementById("busca").addEventListener("input",e=>{ bQ=e.target.value; renderGrade(); });
+document.getElementById("btnReset").addEventListener("click",()=>setPilar("TODOS"));
+
+/* Init */
+renderStats();
 renderPilares();
 renderGrade();
 </script>
